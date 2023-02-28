@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etxt_provice_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round_border"
+            android:focusable="false"
+            android:fontFamily="@font/sailec_regular"
+            android:hint="@string/search_district"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/etxt_district_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_border"
+            android:focusable="false"
+            android:fontFamily="@font/sailec_regular"
+            android:hint="@string/search_village"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/etxt_village_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_border"
+            android:focusable="false"
+            android:fontFamily="@font/sailec_regular"
+            android:hint="@string/search_account"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_load_infor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:drawableStart="@drawable/ic_search"
+            android:fontFamily="@font/sailec_regular"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/search_here"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackground">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/image_no_product"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_marginTop="50dp" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

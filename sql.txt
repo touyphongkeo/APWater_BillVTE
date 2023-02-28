@@ -1,0 +1,16 @@
+SELECT top 10 MASTER.CCODE, MASTER.RATRID, MASTER.NAME, MASTER.AREACODE, MASTER.STATUS, BB.MICODE, BB.TCODE, 
+  MASTER.ACCOUNT, BB.BILLNO, BB.STATUS AS Expr3, BB.PREVREAD, BB.PREVDATE, BB.PRESREAD, BB.PRESDATE, ISNULL(BB.Consumption,0) as Consumption ,ISNULL(BB.waterBill,0) as waterBill, ISNULL(BB.Mrent,0) as Mrent, ISNULL(BB.Tax,0) as Tax , ISNULL(BB.Sewage,0) as Sewage, ISNULL(BB.Surcharge,0) as Surcharge, BB.Cnt, BB.Deviation, ISNULL(BB.Total_Bill,0) as Total_Bill, ISNULL(MRENT.RENT,0) as RENT , 
+                        MASTER.RATRID AS Expr1, ISNULL(BB.Arrears,0) as Arrears , ISNULL(MASTER.TOTALDUE,0) AS TOTALDUE1, ISNULL(BB.TOTALDUE, 0) AS TOTALDUE, BB.Stay, 
+BB.AMOUNT, BB.Grand_total, MASTER.ZONE, MASTER.WALKSEQ, COLLECTORS.NAME AS Expr2, KHET.Khet_NameLao, 
+                        MRENT.SIZEDESC, BB.Addnew, BB.Checkbill, BB.Detive, BB.ConNew, MASTER.COCODE
+                        FROM MASTER INNER JOIN
+                        BB ON MASTER.ACCOUNT = BB.ACCOUNT LEFT OUTER JOIN
+                        MRENT ON MASTER.SIZECODE = MRENT.SIZECODE LEFT OUTER JOIN
+                        KHET ON MASTER.AREACODE = KHET.Khet_ID LEFT OUTER JOIN
+                        COLLECTORS ON MASTER.COCODE = COLLECTORS.COCODE 
+												where 1=1 and MASTER.Move=0 
+												And MASTER.ZONE='01'
+												And MASTER.AREACODE='01005'
+												and MASTER.STATUS<>'X' 
+											
+													order by BB.TCODE ASC,BB.ACCOUNT ASC

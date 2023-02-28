@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@drawable/round_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/images"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:background="@drawable/pos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:id="@+id/text"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="#090808"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/images"
+                android:text="@string/textbills"/>
+            <TextView
+                android:layout_below="@+id/text"
+                android:id="@+id/text1"
+                android:textStyle="bold"
+                android:textColor="#090808"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/images"
+                android:text=""/>
+            <TextView
+                android:layout_below="@+id/text"
+                android:id="@+id/txt_ZONE"
+                android:textStyle="bold"
+                android:textColor="#090808"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text1"
+                android:text="@string/Branches"/>
+            <TextView
+                android:layout_below="@+id/text"
+                android:id="@+id/text3"
+                android:textColor="#090808"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_ZONE"
+                android:text="@string/teld"/>
+            <TextView
+                android:layout_below="@+id/text"
+                android:id="@+id/text4"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="#090808"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text3"
+                android:text="054-212513"/>
+            <TextView
+                android:layout_below="@+id/text1"
+                android:id="@+id/text5"
+                android:textStyle="bold"
+                android:textColor="#090808"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/images"
+                android:text="@string/month_bills"/>
+            <TextView
+                android:layout_below="@+id/text1"
+                android:id="@+id/txt_Date"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#090808"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text5"
+                android:text="@string/dates"/>
+            <TextView
+                android:layout_below="@+id/text1"
+                android:id="@+id/No_bills"
+                android:textStyle="bold"
+                android:textColor="#090808"
+                android:textSize="11sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_Date"
+                android:text="@string/No_bills"/>
+            <TextView
+                android:layout_below="@+id/text1"
+                android:id="@+id/txt_BillNo"
+                android:textStyle="bold"
+                android:textColor="#090808"
+                android:textSize="11sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/No_bills"
+                android:text="@string/NOcode"/>
+
+            <TextView
+                android:id="@+id/waterbill"
+                android:layout_below="@+id/txt_BillNo"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#090808"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/water_billse"/>
+            <TextView
+                android:id="@+id/kid"
+                android:layout_below="@+id/waterbill"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/kid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_margin="0dp">
+                <!-- Table Heading -->
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_users"
+                        android:textColor="#131212"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/txt_NAME"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="aa"
+                        android:textStyle="bold"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:layout_weight="2" />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Typeof_user"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:layout_weight="2" />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#171313"
+                        android:textSize="12sp"
+                        android:layout_weight="2"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Address"
+                        android:textColor="#131212"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/txt_AREACODE"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="bb"
+                        android:textStyle="bold"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:layout_weight="2"/>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Previousentrydate"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2" />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="10/01/2020"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Subdivisions"
+                        android:textColor="#131212"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/txt_Tcode"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="41703"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Dateofthisentry"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="10/03/2020"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+                        />
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Accountnumber"
+                        android:textColor="#131212"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"/>
+
+                    <TextView
+                        android:id="@+id/txt_ACCOUNT"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="41401025"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_last"
+                        android:textColor="#0C0A0A"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="19800"
+                        android:textStyle="bold"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Water_user"
+                        android:textColor="#131212"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="414-00122"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/NoReadthistime"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="20000"
+                        android:textStyle="bold"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Watermeasurementnumber"
+                        android:textColor="#131212"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="106-10430-17"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Volumeofwaterused"
+                        android:textColor="#171313"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:layout_weight="2"
+
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="200 ມ³"
+                        android:textColor="#171313"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+
+                        />
+                </TableRow>
+                <!-- Table Data -->
+            </TableLayout>
+
+
+            <TableLayout
+                android:background="@color/white"
+                android:id="@+id/table2"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp">
+                <TableRow
+                    android:background="@drawable/round_table">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Description"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Volume"
+                        android:textStyle="bold"
+                        android:textColor="#090909"
+                        android:textSize="14sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:text="@string/Price"
+                        android:textStyle="bold"
+                        android:textColor="#0C0C0C"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Money"
+                        android:textColor="#0B0A0A"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/round_table">
+
+                    <TextView
+                        android:id="@+id/data1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="0-10 ມ³"
+                        android:textColor="#0C0B0B"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:id="@+id/data2"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textStyle="bold"
+                        android:textColor="#151414"
+                        android:textSize="14sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/data3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:text="1379"
+                        android:textStyle="bold"
+                        android:textColor="#171212"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:id="@+id/data4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="13.790"
+                        android:textStyle="bold"
+                        android:textColor="#100C0C"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/round_table">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="1l-30 ມ³"
+                        android:textColor="#0C0B0B"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textColor="#151414"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:text="1910"
+                        android:textColor="#171212"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="38,200"
+                        android:textColor="#100C0C"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/round_table">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="3l-50 ມ³"
+                        android:textColor="#0C0B0B"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textColor="#151414"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:text="1379"
+                        android:textStyle="bold"
+                        android:textColor="#171212"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="48,800"
+                        android:textColor="#100C0C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/round_table">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=">50 ມ³"
+                        android:textColor="#0C0B0B"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textColor="#151414"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:text="2971"
+                        android:textStyle="bold"
+                        android:textColor="#171212"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="148550"
+                        android:textColor="#100C0C"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <!-- Table Data -->
+            </TableLayout>
+
+
+
+
+            <TableLayout
+                android:id="@+id/table3"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/table2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp">
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ຄ່ານ້ຳຄັ້ງທີ I"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="ແຕ່ເດືອນ"
+                        android:textStyle="bold"
+                        android:textColor="#0C0B0B"
+
+                        android:textSize="12sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+
+                        android:text="01/202"
+                        android:textStyle="bold"
+                        android:textColor="#070606"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="02/2020"
+                        android:textColor="#100D0D"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="249340"
+                        android:textColor="#100D0D"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ຄ່ານ້ຳຄັ້ງທີ II"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="ແຕ່ເດືອນ"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:text="02/2020"
+                        android:textColor="#070606"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="03/2020"
+                        android:textColor="#100D0D"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="249340"
+                        android:textColor="#100D0D"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ຄ່າບໍລຸງຮັບສາ"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="4300"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ດຳນ້າເປືອກ"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ອາກອນ 10%"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="50.298"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ລວມເງີນໃນເດືອນ"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="553278"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ໜື້ຄ້າງຈ່າຍ"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ລວມເງີນທີ່ຕ້ອງການຈ່າຍທັງໜົດ"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:layout_weight="4"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:background="@drawable/round_table"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="553278"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        />
+
+                </TableRow>
+
+                <RelativeLayout
+                    android:id="@+id/lout5"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/bar_image"
+                        android:src="@drawable/cod"
+                        android:layout_marginLeft="90dp"
+                        android:layout_width="150dp"
+                        android:padding="5dp"
+                        android:layout_height="50dp"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/bar_number"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bar_image"
+                        android:layout_marginLeft="90dp"
+                        android:gravity="center_vertical"
+                        android:text="010010002072021"
+                        android:textAlignment="center"
+                        android:textColor="#0B0A0A"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <TableRow
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ຄຳເຕືອນ: ກະລຸນາຈ່າຍກ່ອນ "
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="2"
+
+                        />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="30/03/2020"
+                        android:textColor="#0C0B0B"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="2"
+
+                        />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="ໜາຍເຫດ: ໃບບີນຄ່ານ້ຳປະປ່າສາມາດໃຊ້ແທນໃບທວງໜີໄດ້"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="2"/>
+
+
+
+
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="__________________________________________________"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="2"/>
+                </TableRow>
+                <TableRow
+                    android:background="@color/white">
+                    <TextView
+                        android:background="@color/white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/water_meters"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_weight="2"/>
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_update_expense2"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/sailec_regular"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ພິມບິນ"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,410 @@
+<resources>
+
+    <string name="app_name" translatable="false">WaterVTE</string>
+
+    <string name="text_french" translatable="false">Lao</string>
+    <string name="text_english" translatable="false">English</string>
+
+
+    <!--Replace your adMob application ID here -->
+    <string name="admob_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!--Replace your adMob Banner Ads ID here -->
+    <string name="admob_banner_ads_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--Replace your admob Interstitial Ads ID here -->
+    <string name="admob_interstitial_ads_id" translatable="false">"ca-app-pub-3940256099942544/1033173712"</string>
+
+
+    <string name="menuwater">APIS WaterBill</string>
+    <string name="all_waterbill">ໃບຄ່ານ້ຳທັງໝົດ</string>
+    <string name="edit_waterbill">ປ້ອນຂໍ້ມູນບິນຄ່ານ້ຳ</string>
+
+    <string name="menuwater01">ລາຍການບິນແຈ້ງຄ່ານ້ຳ</string>
+    <string name="menuwater02">ລາຍການໃບຮັບເງິນ</string>
+    <string name="menuwater03">ລາຍງານບິນແຈ້ງຄ່ານ້ຳ</string>
+    <string name="menuwater04">ສົ່ງຂໍ້ມູນບິນແຈ້ງຄ່ານ້ຳ</string>
+    <string name="menuwater05">ດືງຂໍ້ມູນຂໍ້ມູນບິນແຈ້ງຄ່ານ້ຳ</string>
+    <string name="menuwater06">ລະບົບຄວບຄຸມ</string>
+
+
+    <string name="counter_no">ເລກບັນຊີ</string>
+
+    <string name="search_district">ຄົ້ນຫາຕາມເມືອງ. . .</string>
+    <string name="search_village">ຄົ້ນຫາຕາມບ້ານ. . .</string>
+    <string name="search_account">ຄົ້ນຫາເລກບັນຊີ. . .</string>
+
+    <string name="Load_successfully">ໂລດຂໍ້ມູນສຳເລັດ</string>
+
+    <string name="water_Acc">ເລກບັນຊີ: </string>
+    <string name="water_custname">ຊື່ຜູ້ນຳໃຊ້ນຳ້: </string>
+    <string name="water_prvread">ເລກອ່ານຄັ້ງກ່ອນ: </string>
+    <string name="water_prvdate">ວ/ທຈົດຄັ້ງກ່ອນ: </string>
+    <string name="water_comsum">ບໍລິມາດນ້ຳໃຊ້: </string>
+    <string name="water_total">ໜີ້ຄ້າງຈ່າຍ: </string>
+    <string name="download">ດາວໂຫລດ...</string>
+    <string name="upload">ສົ່ງຂໍ້ມູນ...</string>
+
+
+    <string name="amontx">ຈຳນວນເງີນ: </string>
+    <string name="Invoice">ລະຫັດໃບບີນ:</string>
+    <string name="Water">ເລກໝໍ້ແທກນ້ຳ:</string>
+    <string name="Amount">ຈຳນວນເງີນ:</string>
+    <string name="receipt_list">ລາຍການໃບຮັບເງີນ</string>
+
+    <string name="email">UserID</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="no_internet">Please, enable internet connection before using this app</string>
+
+
+    <string name="action_settings">ຕັ້ງຄ່າ</string>
+    <string name="products">products</string>
+    <string name="suppliers">suppliers</string>
+    <string name="customers">customers</string>
+    <string name="pos">pos</string>
+    <string name="expense">expense</string>
+    <string name="report">ລາຍງານ</string>
+    <string name="all_orders">ລາຍສັ່ງສິນຄ້າ</string>
+    <string name="all_sales">ລາຍການທັງໝົດ</string>
+    <string name="daily">ລາຍງານປະຈຳວັນ</string>
+    <string name="monthly">ລາຍງານປະຈຳເດືອນ</string>
+    <string name="yearly">ລາຍງານປະຈຳປີ</string>
+    <string name="customer_name">customer name</string>
+    <string name="customer_cell">Cellule client</string>
+    <string name="customer_email">Client de messagerie</string>
+    <string name="customer_address">Adresse du client</string>
+    <string name="add_customer">Ajouter un client</string>
+    <string name="enter_customer_name">Entrez le nom du client</string>
+    <string name="enter_customer_cell">Entrez la cellule client</string>
+    <string name="enter_customer_address">Entrez l\'adresse du client</string>
+    <string name="customer_successfully_added">Client ajouté avec succès</string>
+
+    <string name="all_customer">Tous les clients</string>
+    <string name="no_customer_found">Aucun client trouvé!</string>
+    <string name="all_suppliers">Tous les fournisseurs</string>
+    <string name="no_suppliers_found">Aucun fournisseur trouvé!</string>
+
+    <string name="add_suppliers">Ajouter des fournisseurs</string>
+    <string name="enter_suppliers_name">Entrez le nom du fournisseur</string>
+    <string name="enter_suppliers_contact_person_name">Entrez le nom de la personne-ressource des fournisseurs</string>
+    <string name="enter_suppliers_cell">Entrez la cellule des fournisseurs</string>
+    <string name="enter_valid_email">Entrez une adresse email valide</string>
+    <string name="enter_suppliers_address">Entrez l\'adresse du fournisseur</string>
+    <string name="suppliers_successfully_added">Fournisseurs ajoutés avec succès</string>
+    <string name="failed">failed</string>
+
+    <string name="product_name_cannot_be_empty">Le nom du produit ne peut pas être vide!</string>
+    <string name="product_category_cannot_be_empty">La catégorie de produits ne peut pas être vide!</string>
+    <string name="product_sell_price_cannot_be_empty">Le prix de vente du produit ne peut pas être vide!</string>
+    <string name="product_stock_cannot_be_empty">Le stock de produits ne peut pas être vide!</string>
+    <string name="product_supplier_cannot_be_empty">Le fournisseur de produits ne peut pas être vide!</string>
+    <string name="product_weight_cannot_be_empty">Le poids du produit ne peut pas être vide!</string>
+    <string name="product_successfully_added">Produit ajouté avec succès</string>
+    <string name="something_went_wrong">Quelque chose a mal tourné</string>
+
+
+    <string name="add_product">Ajouter un produit</string>
+    <string name="product_details">détails du produit</string>
+    <string name="product_code">Code produit</string>
+    <string name="product_description">Description du produit</string>
+    <string name="unit_product_sell_price">Prix ​​de vente du produit unitaire</string>
+    <string name="product_sell_price">Prix ​​de vente du produit</string>
+    <string name="product_stock">Stock de produits</string>
+    <string name="product_weight">Poids du produit</string>
+    <string name="select_product_weight_unit">Sélectionnez l\'unité de poids du produit</string>
+    <string name="product_weight_unit">Unité de poids du produit</string>
+    <string name="select_supplier">Sélectionnez un fournisseur</string>
+    <string name="product_supplier">Fournisseur de produits</string>
+    <string name="choose_product_image">Choisissez l\'image du produit</string>
+    <string name="database_backup">ສຳຮອງຂໍ້ມູນ</string>
+    <string name="database_import">ກູ້ຂໍ້ມູນຄືນ</string>
+
+
+    <string name="year_2020">year 2021</string>
+    <string name="total_sales">ຈຳນວນທັງໝົດ : </string>
+    <string name="search_here">ຄົ້ນຫາ..</string>
+    <string name="no_order_found">ບໍ່ມີຂໍ້ມູນ</string>
+    <string name="no_product_found">ບໍ່ມີຂໍ້ມູນ</string>
+    <string name="submit_order">ບັນທຶກລາຍການ</string>
+
+    <string name="all_sales_report">ລາຍການຂໍ້ມູນເກັບຄ່ານຳ້</string>
+    <string name="all_expense_report">ລາຍການບິນເກັບເງິນຄ່ານ້ຳ</string>
+    <string name="monthly_sales_graph">ລາຍງານຂໍ້ມູນການເກັບຄ່ານ້ຳ</string>
+    <string name="monthly_expense_graph">ເອີ້ນຂໍ້ມູນຈາກ Server</string>
+
+    <string name="no_data_found">ບໍ່ມີຂໍ້ມູນ</string>
+
+    <string name="shop_information">ຂໍ້ມູນສຳນັກງານ</string>
+    <string name="data_backup">ສຳຮອງຂໍ້ມູນ</string>
+    <string name="shop_name">ຊື່ສຳນັກງານ</string>
+    <string name="shop_contact_number">ຂໍ້ມູນຕິດຕໍ່</string>
+    <string name="shop_email">Email</string>
+    <string name="shop_address">ທີ່ຢູ່ສຳນັກງານ</string>
+    <string name="currency_symbol">ສັນຍາລັກສະກຸນເງິນ</string>
+    <string name="shop_currency">ສະກຸນເງິນ</string>
+    <string name="edit">ແກ້ໄຂ</string>
+    <string name="update_information">ບັນທຶກ</string>
+    <string name="product_category">ປະເພດ</string>
+    <string name="cancel">ຍົກເລີກ</string>
+    <string name="payment">ການຊຳລະ</string>
+    <string name="submit">ບັນທຶກ</string>
+    <string name="add_to_cart">ເພີມລາຍການ</string>
+    <string name="product_name">product name</string>
+    <string name="weight">ນ້ຳໜັກ:</string>
+    <string name="price">ລາຄາ</string>
+
+    <string name="water_bill_acc">ເລກບັນຊີຜູ້ໃຊ້ນ້ຳ</string>
+    <string name="water_bill_no">ລະຫັດຜູ້ໃຊ້ນ້ຳ</string>
+    <string name="water_bill_name">ຊື່ຜູ້ໃຊ້ນຳ</string>
+    <string name="water_bill_type">ປະພດລູກຄ້າ</string>
+    <string name="water_bill_vread">ເລກຄັ້ງກ່ອນ</string>
+    <string name="water_bill_sread">ເລກຄັ້ງນີ້</string>
+
+    <string name="water_bill_consum">ບໍລິມາດນ້ຳ</string>
+    <string name="water_bill_Deviation">ຄ່າຜິດດ່ຽງ</string>
+    <string name="water_bill_detive">ຄ່າສະເລ່ຍ</string>
+    <string name="water_bill_amt">ຄ່ານ້ຳ</string>
+    <string name="water_bill_Mret">ຄ່າເຊົ່າ</string>
+    <string name="water_bill_SEWER">ຄ່ານ້ຳເປື້ອນ</string>
+    <string name="water_bill_tax">ອາກອນ</string>
+    <string name="water_bill_Box4">ລາຍຈ່າຍເພີ່ມ</string>
+    <string name="water_bill_TotalBill">ລວມມູນຄ່າ</string>
+    <string name="water_bill_Due">ໜີ້ສິນຄ້າງຈ່າຍ</string>
+    <string name="water_bill_Total">ລວມເງິນຕ້ອງຈ່າຍ</string>
+    <string name="successfully_load" translatable="false">successfully</string>
+
+    <string name="Bills">ໃບບີນ</string>
+    <string name="textbills">ລັດວິສາຫະກິດນ້ຳປະປາ ແຂວງບໍລິຄຳໄຊ</string>
+    <string name="saka">ສາຂາ:</string>
+    <string name="Branches">ສີສັດຕະນາກ</string>
+    <string name="teld">ໂທລະສັບ:</string>
+    <string name="tels">054-212513</string>
+    <string name="payments">(ໃບບີນຮັບເງີນ/Payment Receipt)</string>
+    <string name="firstname">ຊື່:</string>
+    <string name="firstnames">ຊື່</string>
+    <string name="Address">ທີຢູ່:</string>
+    <string name="Addresse">ທີຢູ່</string>
+    <string name="Accountnumber">ເລກບັນຊີ</string>
+    <string name="Water_user">ເລກຜູ້ໃຊ້ນ້ຳ</string>
+    <string name="Invoice_code">ລະຫັດໃບບີນ</string>
+    <string name="Water_meter">ເລກໝໍ້ແທກນໍ້ຳ</string>
+    <string name="Recipient">ຜູ້ຮັບເງີນ</string>
+    <string name="water_meters">ນໍ້າມີຄຸນຄ່າ ພວກເຮົາທຸກຄົນ ຄວນຊ່ວຍກັນປົກປັກຮັກສາ</string>
+    <string name="Payment_date">ວັນທີສຳລະ</string>
+    <string name="Payment">ການຊຳລະ</string>
+    <string name="Amount_of_money">ຈຳນວນເງີນ</string>
+    <string name="Payee_list">ລາຍເຊັ້ນຜູ້ຈ່າຍເງີນ</string>
+    <string name="Recipient_list">ລາຍເຊັ້ນຜູ້ຮັບເງີນ</string>
+
+
+    <string name="Water_bills">ລາຍເຊັ້ນຜູ້ຮັບເງີນ</string>
+    <string name="month_bills">ບີນເດືອນ:</string>
+    <string name="dates">03/2020</string>
+    <string name="No_bills">ເລກທີບີນ:</string>
+    <string name="NOcode">4141025032020</string>
+    <string name="water_billse">(ໃບບີນແຈ້ງຄ່ານ້ຳປະປາ)</string>
+    <string name="water_users">ຊື່ຜູ້ໃຊ້ນ້ຳ:</string>
+    <string name="Typeof_user">ປະເພດຜູ້ນຳໃຊ້:</string>
+    <string name="Previousentrydate">ວັນທີຈົດຄັ້ງກ່ອນ:</string>
+    <string name="Dateofthisentry">ວັນທີຈົດຄັ້ງນີ້:</string>
+    <string name="Subdivisions">ອານຸເຂດ:</string>
+    <string name="read_last">ເລກອ່ານຄັ້ງກ່ອນ:</string>
+    <string name="NoReadthistime">ເລກອ່ານຄັ້ງກ່ອນ:</string>
+    <string name="Watermeasurementnumber">ເລກໝໍ່ແທກນ້ຳ:</string>
+    <string name="Volumeofwaterused">ບໍລີມາດນ້ຳໃຊ້:</string>
+    <string name="Description">ລາຍລະອຽດ</string>
+    <string name="Volume">ບໍລີມາດ</string>
+    <string name="Price">ລາຄາ</string>
+    <string name="Money">ເງີນຄ່ານ້ຳ</string>
+
+
+    <string name="unit_product_buy_price"> unit_product_buy_price </string>
+    <string name="supplier_name">supplier_name</string>
+    <string name="supplier_contact_person">supplier_contact_person</string>
+
+    <string name="supplier_cell">supplier_cell</string>
+
+    <string name="supplier_email">Courriel du fournisseur</string>
+
+    <string name="supplier_address">Adresse du fournisseur</string>
+
+    <string name="add_supplier">Ajouter un fournisseur</string>
+    <string name="monthly_expense_in_graph">Dépenses mensuelles dans le graphique</string>
+    <string name="year">An</string>
+    <string name="monthly_expense_report">Rapport des dépenses mensuelles</string>
+    <string name="total_expense">Dépense totale: </string>
+    <string name="monthly_sales_report">Rapport mensuel des ventes</string>
+    <string name="all_expense">Tous les frais</string>
+    <string name="shop_name_cannot_be_empty">Le nom de la boutique ne peut pas être vide</string>
+    <string name="shop_contact_cannot_be_empty">Le contact de la boutique ne peut pas être vide</string>
+    <string name="shop_address_cannot_be_empty">L\'adresse de la boutique ne peut pas être vide</string>
+    <string name="shop_currency_cannot_be_empty">La devise de la boutique ne peut pas être vide</string>
+    <string name="shop_information_updated_successfully">Les informations sur la boutique ont été mises à jour avec succès</string>
+    <string name="enter_local_database_backup_name">Entrez le nom de la sauvegarde de la base de données locale</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="unable_to_create_directory_retry">Impossible de créer le répertoire. Réessayez</string>
+    <string name="database_restore">Restauration de base de données:</string>
+    <string name="unable_to_restore_retry">Impossible de restaurer. Réessayez</string>
+    <string name="backup_folder_not_present">Dossier de sauvegarde absent</string>
+    <string name="all_product">Tous les produits</string>
+    <string name="product_cart">Panier de produit</string>
+    <string name="no_product_in_cart">Aucun produit dans le panier</string>
+    <string name="order_done_successful">Commande terminée avec succès</string>
+    <string name="select_payment_method">SÉLECTIONNEZ LE MODE DE PAIEMENT</string>
+    <string name="select_order_type">CHOISIR LE TYPE DE COMMANDE</string>
+    <string name="select_customer">CHOISIR LE CLIENT</string>
+    <string name="order_history">Historique des commandes</string>
+    <string name="order_details">détails de la commande</string>
+    <string name="total_price">ລວມເງິນຄ່ານ້ຳ: </string>
+    <string name="add_expense">Add Expense</string>
+    <string name="hi_welcome">salut! Bienvenue</string>
+    <string name="product_removed_from_cart">Produit retiré du panier</string>
+    <string name="backup_completed_successfully">ການສຳຮອງຂໍ້ມູນຂອງທ່ານສຳເລັດແລ້ວ!</string>
+    <string name="unable_to_backup_database_retry">ການສຳຮອງຂໍ້ມູນຂອງທ່ານຜິດຜາດ!</string>
+    <string name="database_Import_completed">ການຕິດຕັ້ງຂໍ້ມູນສຳເລັດ!</string>
+    <string name="unable_to_import_database_retry">ການຕິດຕັ້ງຂໍ້ມູນຜິດຜາດ</string>
+    <string name="want_to_delete_customer">Voulez supprimer le client?</string>
+    <string name="customer_deleted">Client supprimé</string>
+    <string name="note">Remarque: </string>
+    <string name="want_to_delete_expense">Voulez supprimer les dépenses ?</string>
+    <string name="expense_deleted">Dépense supprimée</string>
+    <string name="order_id">numéro de commande:</string>
+    <string name="payment_method">Mode de paiement:</string>
+    <string name="order_type">Type de commande:</string>
+    <string name="want_to_delete_supplier">Voulez supprimer le fournisseur ?</string>
+    <string name="supplier_deleted">Fournisseur supprimé</string>
+    <string name="quantity">Quantité:</string>
+    <string name="date">Date:</string>
+    <string name="supplier">Fournisseuse: </string>
+    <string name="buy_price">Prix ​​d\'achat:</string>
+    <string name="sell_price">Prix ​​de vente:</string>
+    <string name="want_to_delete_product">Voulez supprimer le produit ?</string>
+    <string name="product_deleted">Produit supprimé</string>
+    <string name="product_added_to_cart">Produit ajouté au panier</string>
+    <string name="product_already_added_to_cart">Produit déjà ajouté au panier</string>
+    <string name="product_added_to_cart_failed_try_again">Le produit ajouté au panier a échoué! Réessayer</string>
+    <string name="press_once_again_to_exit">ກົດອີກຄັ້ງເພື່ອອອກຈາກລະບົບ!</string>
+    <string name="type_something_to_search">ປ້ອນຄຳສັບທີ່ຕ້ອງການຄົ້ນຫາ</string>
+    <string name="expense_name_cannot_be_empty">Le nom de la dépense ne peut pas être vide</string>
+    <string name="expense_amount_cannot_be_empty">Le montant des dépenses ne peut pas être vide</string>
+    <string name="expense_successfully_added">Dépenses ajoutées avec succès</string>
+
+
+    <string name="qr_barcode_scanner">Scanner QR ou code-barres</string>
+    <string name="camera_permission">Autorisation de caméra requise</string>
+    <string name="export_data_to_excel">Exporter des données vers Excel</string>
+    <string name="import_from_excel">Importer depuis Excel</string>
+    <string name="data">Les données</string>
+    <string name="export_all_data_to_excel">ດາວໂລດຂໍ້ມູນຫຼັກ</string>
+    <string name="data_export_fail">Échec de l\'exportation des données</string>
+    <string name="data_successfully_exported">Données exportées avec succès</string>
+    <string name="data_exporting_please_wait">Exportation de données. S\'il vous plaît, attendez. ..</string>
+    <string name="no_file_found">Aucun fichier trouvé</string>
+    <string name="data_importing_please_wait">Importation de données. S\'il vous plaît, attendez. . .</string>
+    <string name="data_successfully_imported">Importation réussie des données</string>
+    <string name="data_import_fail">Échec de l\'importation des données</string>
+    <string name="error">Erreur</string>
+    <string name="order_receipt">ຮັບໃບບີນ</string>
+    <string name="print">ພິມ</string>
+    <string name="share">share</string>
+    <string name="open_pdf">ເບີດ Pdf</string>
+    <string name="open_with_external_pdf_reader">open_with_external_pdf_reader</string>
+    <string name="generate_pdf_receipt">ພິມບິນ</string>
+    <string name="edit_customer">Modifier le client</string>
+    <string name="edit_suppliers">Modifier les fournisseurs</string>
+    <string name="expense_name">Nom de la dépense</string>
+    <string name="expense_note_if_any">Note de frais (le cas échéant)</string>
+    <string name="expense_note">Note de frais</string>
+    <string name="expense_amount">Montant des dépenses</string>
+    <string name="expense_date">Date de dépense</string>
+    <string name="expense_time">Temps de dépense</string>
+    <string name="edit_expense">Modifier les dépenses</string>
+    <string name="update_successfully">ບັນທຶກສຳເລັດ</string>
+    <string name="categories">Les catégories</string>
+    <string name="category_name">Nom de catégorie</string>
+    <string name="category_deleted">Catégorie supprimée</string>
+    <string name="want_to_delete_category">Voulez supprimer la catégorie ?</string>
+    <string name="add_category">ajouter une catégorie</string>
+    <string name="enter_category_name">Entrez le nom de la catégorie</string>
+    <string name="category_added_successfully">Catégorie ajoutée avec succès</string>
+    <string name="update_category">Mettre à jour la catégorie</string>
+    <string name="category_updated">Catégorie mise à jour</string>
+    <string name="edit_category">Modifier la catégorie</string>
+    <string name="payment_method_deleted">Méthode de paiement supprimée</string>
+    <string name="want_to_delete">Vous souhaitez supprimer ?</string>
+    <string name="all_payment_method">Tous les modes de paiement</string>
+    <string name="payment_method_name">Nom du mode de paiement</string>
+    <string name="add_payment_method">Ajouter une méthode de paiement</string>
+    <string name="enter_payment_method_name">Entrez le nom du mode de paiement</string>
+    <string name="successfully_added">successfully_added</string>
+    <string name="update_payment_method">Mettre à jour le mode de paiement</string>
+    <string name="successfully_updated">successfully updated</string>
+    <string name="payment_methods">méthodes de payement</string>
+    <string name="please_connect_to_internet">please connect to internet </string>
+
+
+    <string name="tax">Impôt</string>
+    <string name="stock">Stock</string>
+    <string name="stock_is_low_please_update_stock">Le stock est faible. Veuillez mettre à jour le stock</string>
+    <string name="available_stock">Stock disponible</string>
+    <string name="tatal_discount">Remise totale</string>
+
+
+    <string name="tax_in_percentage">Taxe en pourcentage (%)</string>
+    <string name="total_tax">Taxe total</string>
+    <string name="sub_total">Total:</string>
+    <string name="discount">Remise:</string>
+    <string name="discount_cant_be_greater_than_total_price">La remise ne peut pas être supérieure au prix total</string>
+    <string name="net_sales">Ventes nettes</string>
+    <string name="total_discount">Remise totale</string>
+    <string name="reset">Reset</string>
+
+    <string name="connect_fail">Printer connection error</string>
+    <string name="connect_lost">Disconnected</string>
+    <string name="not_connected">Connection is not established</string>
+    <string name="title_paired_devices">Paired devices</string>
+    <string name="title_other_devices">Other devices</string>
+    <string name="button_scan">Scan devices</string>
+    <string name="none_paired">No device found</string>
+    <string name="scanning">Searching&#8230;</string>
+    <string name="select_device">Select device</string>
+    <string name="none_found">No device found</string>
+    <string name="connected">Connect to</string>
+    <string name="bluetooth_not_available">Bluetooth not available</string>
+    <string name="turnon_bluetooth">Turn on Bluetooth</string>
+    <string name="pic_load_error">Error in loading picture</string>
+    <string name="print_succ">Print done successfully</string>
+    <string name="print_error">Error in printing</string>
+
+
+    <string name="change_order_status">Modifier le statut de la commande</string>
+    <string name="please_change_order_status_to_complete_or_cancel">Veuillez modifier le statut de la commande pour terminer ou annuler</string>
+    <string name="cancel_order">annuler la commande</string>
+    <string name="order_completed">Commande terminée</string>
+    <string name="order_updated">Order Updated</string>
+    <string name="backup_to_google_drive">ປ່ຽນລະຫັດຜ່ານ</string>
+    <string name="import_from_google_drive">ຂໍ້ມູນສຳນັກງານ</string>
+    <string name="unable_to_read_contents">Impossible de lire le contenu</string>
+    <string name="error_on_import">Erreur lors de l\'importation</string>
+    <string name="select_database_file">Sélectionnez le fichier de base de données</string>
+    <string name="no_file_selected">Aucun fichier sélectionné</string>
+    <string name="failed_to_create_new_contents">Échec de la création de nouveaux contenus.</string>
+    <string name="backup_successfully_loaded">Sauvegarde chargée avec succès!</string>
+    <string name="order_status">Order Status</string>
+    <string name="select_year">Sélectionnez l\'année</string>
+
+    <string name="title_activity_print_test">PrintTestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/notosanslaoui_regular</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

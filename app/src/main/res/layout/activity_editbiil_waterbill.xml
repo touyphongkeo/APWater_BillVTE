@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/distct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="ເລກບັນຊີຜູ້ໃຊ້" />
+            <EditText
+                android:id="@+id/txtAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_acc"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_no" />
+
+            <EditText
+                android:id="@+id/TxtTcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:hint="@string/water_bill_no"
+                android:inputType="text"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_name" />
+
+            <EditText
+                android:id="@+id/txtCusName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:hint="@string/water_bill_name"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_type" />
+
+            <EditText
+                android:id="@+id/txtRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:focusable="false"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:hint="@string/water_bill_type"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_vread" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtPreVread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:focusable="false"
+                android:gravity="center"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:hint="@string/water_bill_vread"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_sread" />
+
+            <EditText
+                android:id="@+id/txtPreSread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:gravity="center"
+                android:hint="@string/water_bill_sread"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:textColor="?attr/colorError"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_consum" />
+
+            <EditText
+                android:id="@+id/txtConSump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_consum"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_Deviation" />
+
+            <EditText
+                android:id="@+id/txtDeviation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Deviation"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_amt" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtWater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/sailec_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_amt"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtWater1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_amt"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_Mret" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtMret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/sailec_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Mret"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtMret1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Mret"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_SEWER" />
+
+            <EditText
+                android:id="@+id/txtSEWER1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_SEWER"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_tax" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/sailec_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_tax"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/txtTax1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_tax"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_Box4" />
+
+            <EditText
+                android:id="@+id/TextBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Box4"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_TotalBill" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtTotalBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_TotalBill"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/txtTotalBill1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_TotalBill"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_Due" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtDue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Due"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtDue1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_Due"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="ເງີນທີຕ້ອງຈ່າຍ" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint=""
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txtTotal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:hint=""
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:padding="5dp"
+                android:text="@string/water_bill_detive" />
+
+            <EditText
+                android:id="@+id/txtDetive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/round_border"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="@string/water_bill_detive"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txt_update_expense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bgbtnsplash"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/update_information"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_update_expense2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ປິດ"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txt_print"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bgbtnsplash"
+                android:fontFamily="@font/notosanslaoui_regular"
+                android:gravity="center"
+                android:padding="15dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:text="@string/print"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

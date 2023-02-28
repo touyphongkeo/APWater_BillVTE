@@ -1,0 +1,7 @@
+SELECT  BB.CCODE, BB.RATRID, BB.NAME, BB.AREACODE, BB.STATUS, BB.MICODE, BB.TCODE, 
+  BB.ACCOUNT, BB.BILLNO, BB.PREVREAD, BB.PREVDATE, BB.PRESREAD, BB.PRESDATE, ifnull(BB.Consumption,0) as Consumption ,ifnull(BB.waterBill,0) as waterBill, ifnull(BB.Mrent,0) as Mrent, ifnull(BB.Tax,0) as Tax , ifnull(BB.Sewage,0) as Sewage, ifnull(BB.Surcharge,0) as Surcharge, BB.Cnt, BB.Deviation, ifnull(BB.Total_Bill,0) as Total_Bill, 
+                        BB.RATRID AS Expr1, ifnull(BB.Arrears,0) as Arrears , ifnull(BB.TOTALDUE,0) AS TOTALDUE1, ifnull(BB.TOTALDUE, 0) AS TOTALDUE, BB.Stay, 
+BB.AMOUNT, BB.Grand_total, BB.ZONE, BB.WALKSEQ, BB.Addnew, BB.Checkbill, BB.Detive, BB.ConNew, BB.COCODE
+                        FROM BB
+												WHERE 1=1 AND BB.AREACODE='01018'
+											  order by BB.TCODE,BB.ACCOUNT ASC

@@ -1,0 +1,17 @@
+txtAccount
+TxtTcode
+txtCusName
+txtRate
+txtPreVread
+ txtPreSread
+txtConSump
+txtDeviation
+            txtdetive
+            txtWater
+            txtMret
+            txtSEWER1
+            txtTax
+            TextBox4
+            txtTotalBill
+            txtDue
+            txtTotal

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.apisvtes">
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="30"
+        tools:ignore="GradleOverrides" />
+
+
+
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.app.apisvtes.utils.MultiLanguageApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.app.apisvtes.tapwater.GpsActivity"></activity>
+        <activity android:name="com.app.apisvtes.printbill" />
+        <activity android:name="com.app.apisvtes.tapwater.PrintTestActivity"
+                  android:label="@string/title_activity_print_test"
+                  android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.app.apisvtes.orders.DeviceListActivity" />
+        <activity android:name="com.app.apisvtes.settings.payment_method.EditPaymentMethodActivity" />
+        <activity android:name="com.app.apisvtes.settings.payment_method.AddPaymentMethodActivity" />
+        <activity android:name="com.app.apisvtes.settings.payment_method.PaymentMethodActivity" />
+        <activity android:name="com.app.apisvtes.expense.EditExpenseActivity" />
+        <activity android:name="com.app.apisvtes.pdf_report.ViewPDFActivity" />
+        <activity android:name="com.app.apisvtes.settings.backup.BackupActivity" />
+        <activity android:name="com.app.apisvtes.settings.shop.ShopInformationActivity" />
+        <activity android:name="com.app.apisvtes.report.ExpenseGraphActivity" />
+        <activity android:name="com.app.apisvtes.report.ExpenseReportActivity" />
+        <activity android:name="com.app.apisvtes.paymentrepayment.RepaymentActivity" />
+        <activity android:name="com.app.apisvtes.paymentrepayment.RillTestActivity" />
+        <activity android:name="com.app.apisvtes.expense.AddExpenseActivity" />
+        <activity android:name="com.app.apisvtes.printrepay.PrintTest2Activity"/>
+        <activity android:name="com.app.apisvtes.repayment.Repayment_list_Activity" />
+        <activity android:name="com.app.apisvtes.settings.SettingsActivity" />
+        <activity android:name="com.app.apisvtes.expense.ExpenseActivity" />
+        <activity android:name="com.app.apisvtes.report.GraphReportActivity" />
+        <activity android:name="com.app.apisvtes.report.SalesReportActivity" />
+        <activity android:name="com.app.apisvtes.report.ReportActivity" />
+        <activity android:name="com.app.apisvtes.orders.OrderDetailsActivity" />
+        <activity android:name="com.app.apisvtes.orders.OrdersActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.AddProductActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.MenuActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.WaterBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.EditWaterBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.BillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.BillDetailsActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.PrintListActivity" />
+        <activity android:name="com.app.apisvtes.editbill.EditWaterbbBillActivity" />
+        <activity android:name="com.app.apisvtes.editbill.BillTestbillActivity" />
+        <activity android:name="com.app.apisvtes.editbill.BillTestbill2Activity" />
+        <activity android:name="com.app.apisvtes.tapwater.ScanBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.AddWaterBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.ListWaterBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.PrintReceiptActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.PrintBillActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.Receipt_list_Activity" />
+        <activity android:name="com.app.apisvtes.tapwater.Expensereport_listActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.DailyreportActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.Printer_svk_Activity1" />
+        <activity android:name="com.app.apisvtes.tapwater.PrinterActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.BillTestActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.BillTestsActivity" />
+        <activity android:name="com.app.apisvtes.tapwater.BillTest2Activity" />
+        <activity android:name="com.app.apisvtes.tapwater.Accountlist_Activity" />
+        <activity android:name="com.app.apisvtes.menudownload.dowlaodActivity" />
+        <activity android:name="com.app.apisvtes.downloadbtpayment.LoadBTPaymentActivity" />
+
+        <activity android:name="com.app.apisvtes.payments.PaymentActivity" />
+        <activity android:name="com.app.apisvtes.payments.Payment2Activity" />
+
+        <activity android:name="com.app.apisvtes.expense.EditTextPinchZoomActivity" />
+        <activity android:name="com.app.apisvtes.student.ShowAllStudentsActivity" />
+        <activity android:name="com.app.apisvtes.student.ShowSingleRecordActivity" />
+        <activity android:name="com.app.apisvtes.student.StudentActivity" />
+        <activity android:name="com.app.apisvtes.student.UpdateActivity" />
+        <activity android:name="com.app.apisvtes.uploads.UploadDataActivity" />
+        <activity android:name="com.app.apisvtes.uploads.LoginActivitys" />
+        <activity android:name="com.app.apisvtes.uploads.UploadWaterActivity" />
+        <activity android:name="com.app.apisvtes.download.LoadWaterActivity" />
+        <activity android:name="com.app.apisvtes.LoginActivity" />
+        <activity android:name="com.app.apisvtes.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" />
+        </provider> <!-- For Admob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_application_id" />
+    </application>
+
+</manifest>

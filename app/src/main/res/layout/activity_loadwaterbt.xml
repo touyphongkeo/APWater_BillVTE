@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ເລືອກເມືອງ"
+            android:textSize="18dp"
+            android:fontFamily="@font/notosanslaoui_regular"/>
+
+        <EditText
+            android:drawableRight="@drawable/ic_search"
+            android:id="@+id/etxt_provice_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/round_border"
+            android:focusable="false"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:hint="@string/search_district"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text1sss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ເມືອງ"
+            android:fontFamily="@font/notosanslaoui_regular"/>
+        <TextView
+            android:id="@+id/text_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ເລືອກບ້ານ"
+            android:textSize="18dp"
+            android:fontFamily="@font/notosanslaoui_regular"/>
+        <EditText
+            android:drawableRight="@drawable/ic_search"
+            android:id="@+id/etxt_district_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_border"
+            android:focusable="false"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:hint="@string/search_village"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text1ss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ເມືອງ"
+            android:fontFamily="@font/notosanslaoui_regular"/>
+
+        <TextView
+            android:id="@+id/btnShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bgbtnsplash"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/download"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/pBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/simpleProgressBar"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/tView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pBar"
+            android:layout_alignLeft="@+id/pBar"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_below="@+id/tView"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nvet"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relatives"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/cx"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/images"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="ນ້ຳປະປາ ສະຫວັນນະເຂດ"
+            android:textColor="#090808"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/images"
+            android:fontFamily="@font/sailec_black"
+            android:textColor="#090808"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_ZONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/text1"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="ຖະໜົນ ສະສີສະວ່າງວົງ,"
+            android:textColor="#090808"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/txt_ZONE"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="ຕູ້ໄປສະນີ:"
+            android:textColor="#090808"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/text3"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="77"
+            android:textColor="#090808"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/text1s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/images"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="ໂທລະສັບ: (856-41) 212017"
+            android:textColor="#090808"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text1ss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/images"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/text1s"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:text="ໂທລະສານ: (856-41) 213513"
+            android:textColor="#090808"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/waterbill"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1ss"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="@font/notosanslaoui_regular"
+            android:gravity="center"
+            android:text="(ໃບບີນແຈ້ງຄ່ານ້ຳ)"
+            android:textColor="#090808"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/la01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/waterbill"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="260"
+            android:background="@drawable/round_border"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:id="@+id/lers1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/table1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#0B0909">
+                    <!-- Table Heading -->
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ລະຫັດລູກຄ້າ:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_NAME"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   01121"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   ລະຫັດຕິດຕັ້ງ:"
+                            android:textColor="#0B0909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_RATRIs"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="00101003"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ຊື່:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_AREACODE"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   ນາງ ວັນ"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   ວັນທີຜະລິດ:"
+                            android:textColor="#070606"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_PREVDATE"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="01/05/2021"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ທີ່ຢູ່:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_KhetID"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   ໂພນທັນ"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="   ປະຈຳເດືອນ:"
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_PRESDATEse"
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="01/12/2020"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ວັນທີຈົດຄັ້ງກ່ອນ:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="02/02/2020"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ເລກອ່ານຄັ້ງກ່ອນ:         "
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="2020"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ວັນທີຈົດຄັ້ງນີ້:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="02/03/2021"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ເລກອ່ານຄັ້ງນີ້:         "
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="2020"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ເລກລຽງໃບບີນ:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="02032021"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ແຜນທີ່ອ້າງອິງ:         "
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="20206546"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ກຳນົດວັນທີຈ່າຍ:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="02/03/2021"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ອັດຕາ:         "
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="06546"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="ບໍລີມາດນຳໃຊ້:"
+                            android:textColor="#131212"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:text="02032021"
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/sailec_black"
+                            android:text="        "
+                            android:textColor="#070707"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/sailec_black"
+                            android:text=""
+                            android:textColor="#171313"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <!-- Table Data -->
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tessv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lers1"
+                android:fontFamily="@font/sailec_black"
+                android:text="---------------------------------------------------------------"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tessv">
+
+                <TableLayout
+                    android:id="@+id/table3"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp">
+
+                    <TableRow
+                        >
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ລາຍລະອຽດ   "
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ບໍລິມາດນຳໃຊ້"
+                            android:textColor="#0C0B0B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ລາຄາ"
+                            android:textColor="#070606"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ເງີນຄານ້ຳ"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ນ້ຳເປື້ອນ%"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ນ້ຳເປື້ອນ"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="200.000     "
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="60"
+                            android:textColor="#0C0B0B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="15.000 "
+                            android:textColor="#070606"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="40.000"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="10%"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="10.000"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ຄ່າບຳລຸງຮັກສາ"
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#0C0B0B"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#070606"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="0dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ອາກອນ        "
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#0C0B0B"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_BillMY1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#070606"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sailec_black"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#100D0D"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ໜີ້ຄ້າງຄືນຫຼັງ:   "
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="100.000"
+                            android:textColor="#0C0B0B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ຄານ້ຳໃນເດືອນ:"
+                            android:textColor="#070606"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="60.000"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="00000"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="0dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ລວມເງີນຕ້ອງຈ່າຍ:"
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="120.000 ກິບ  "
+                            android:textColor="#0C0B0B"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="ລວມເງີນໃນເດືອນ:"
+                            android:textColor="#070606"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="260.000 ກິບ"
+                            android:textColor="#100D0D"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white" />
+
+
+                    <TableRow
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="                  ໃບບີນເລກທີ:"
+                            android:textColor="#090909"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/notosanslaoui_regular"
+                            android:gravity="center_horizontal"
+                            android:text="1000102321"
+                            android:textColor="#0C0B0B"
+                            android:background="@drawable/round_table"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
