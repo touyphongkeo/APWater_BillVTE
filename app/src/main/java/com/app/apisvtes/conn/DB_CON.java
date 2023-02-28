@@ -9,13 +9,13 @@ import java.sql.SQLException;
 
 public class  DB_CON {
     private static final String LOG = "DEBUG";
-  //  private static String ip = "141.164.96.15";//141.164.96.15/1455/NAMPAPA_VTE/npp_vte/nppvte@2022
-    private static String ip = "150.95.88.209";//150.95.88.209/14771/NAMPAPA_TEST/sa/sql@2022
-    private static String port = "14771";
+
+    private static String ip = "";
+    private static String port = "";
     private static String classs = "net.sourceforge.jtds.jdbc.Driver";
-    private static String db = "NAMPAPA_VTE123";
-    private static String un = "sa";
-    private static String password = "sql@2022";
+    private static String db = "";
+    private static String un = "";
+    private static String password = "";
     private static Context context;
 
     public static Connection CONN(){
