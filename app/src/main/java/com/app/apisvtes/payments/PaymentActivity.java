@@ -449,7 +449,7 @@ public class PaymentActivity extends BaseActivity {
 
                     databaseAccess.open();
                     databaseAccess.updateMaster223(textpayment, CustID);
-                  //  Confirm();
+                    //  Confirm();
 
 
                     databaseAccess.open();
@@ -494,21 +494,26 @@ public class PaymentActivity extends BaseActivity {
                             if (bb<=bbs){
                                 String vvvv= "0";
                                 double vbb = bbs-bb;
+                                double bhjf = Double.parseDouble(f1.format(vbb));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjf,b,vv,b, PSTATUS, billno, Usr_id1);
 
                             }else {
 
                                 String vvvv= "0";
                                 double vbb = bb-bbs;
+                                double bhjff = Double.parseDouble(f1.format(vbb));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
+
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
+
+                                //  databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
 
                             }
 
-                         //   Toast.makeText(PaymentActivity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
+                            //   Toast.makeText(PaymentActivity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
                             Confirm();
 
                         } else {
@@ -544,18 +549,20 @@ public class PaymentActivity extends BaseActivity {
                             double bb = Double.parseDouble(b);
 
                             if (bb<=bbs){
-                                    double vbb = bbs - bb;
-                                    String vvvv = "0";
-                                    String cb11 = String.valueOf(vbb);
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11, b, vv, b, PSTATUS, billno, Usr_id1);
+                                double vbb = bbs - bb;
+                                double bhj = Double.parseDouble(f1.format(vbb));
+                                String vvvv = "0";
+                                String cb11 = String.valueOf(vbb);
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhj, b, vv, b, PSTATUS, billno, Usr_id1);
 
                             }else {
                                 double vbb = bb-bbs;
+                                double bhjs = Double.parseDouble(f1.format(vbb));
                                 String vvvv= "0";
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjs,b,vv,b, PSTATUS, billno, Usr_id1);
 
                             }
 
@@ -572,6 +579,8 @@ public class PaymentActivity extends BaseActivity {
             }
         });
     }
+
+
 
 
 

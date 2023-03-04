@@ -52,6 +52,7 @@ public class EditWaterbbBillActivity extends BaseActivity {
     TextView txtEditExpense,txtUpdateExpense,txtUpdateExpense2,txtPrint,distct;
     public DecimalFormat f;
     public DecimalFormat f1;
+    public DecimalFormat f3;
 
     String  txtSlab3="0";
     String  txtCurCode="0";
@@ -305,6 +306,7 @@ public class EditWaterbbBillActivity extends BaseActivity {
                             txtPreSread.requestFocus();
                         }else{
                             try {
+
                                 DatabaseAccess databaseAccess = DatabaseAccess.getInstance(EditWaterbbBillActivity.this);
                                 databaseAccess.open();
                                 String bb = "1";
@@ -339,9 +341,9 @@ public class EditWaterbbBillActivity extends BaseActivity {
                                     databaseAccess.updateMASTERSBill_no(ACCOUNT,billno,dateF);
 
 
+
                                     databaseAccess.open();
                                     databaseAccess.updateMaster22(TOTALDUE1, ACCOUNT);
-
 //                                    databaseAccess.open();
 //                                    databaseAccess.updateMASTERTOTALDUE1(TOTALDUE1, khetID, AREACODE, ACCOUNT,billno);
 

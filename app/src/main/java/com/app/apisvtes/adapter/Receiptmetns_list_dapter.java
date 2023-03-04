@@ -140,21 +140,25 @@ public class Receiptmetns_list_dapter extends RecyclerView.Adapter<Receiptmetns_
                         CustID=ACCOUNT;
                         Intent i = new Intent(context, BillTestActivity.class);
                         context.startActivity(i);
+
                     }else if (RATRIDS.equals("02")){
                         holder.progressBar2.setVisibility(View.VISIBLE);
                         CustID=ACCOUNT;
                         Intent i = new Intent(context, BillTestsActivity.class);
                         context.startActivity(i);
+
                     }else if (RATRIDS.equals("03")){
                         holder.progressBar2.setVisibility(View.VISIBLE);
                         CustID=ACCOUNT;
                         Intent i = new Intent(context, BillTestActivity.class);
                         context.startActivity(i);
+
                     }else if (RATRIDS.equals("04")){
                         holder.progressBar2.setVisibility(View.VISIBLE);
                         CustID=ACCOUNT;
                         Intent i = new Intent(context, BillTestActivity.class);
                         context.startActivity(i);
+
                     }
 
                 }

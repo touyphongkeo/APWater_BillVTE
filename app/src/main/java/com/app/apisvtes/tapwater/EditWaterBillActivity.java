@@ -94,6 +94,7 @@ public class EditWaterBillActivity extends BaseActivity {
             getSupportActionBar().setTitle(R.string.edit_waterbill);
             f = new DecimalFormat("##0.00");
 
+
             txtAccount = findViewById(R.id.txtAccount);
             txtTcode = findViewById(R.id.TxtTcode);
             txtCusName = findViewById(R.id.txtCusName);
@@ -307,6 +308,7 @@ public class EditWaterBillActivity extends BaseActivity {
                             txtPreSread.requestFocus();
                         }else{
                             try {
+
                                 DatabaseAccess databaseAccess = DatabaseAccess.getInstance(EditWaterBillActivity.this);
                                 databaseAccess.open();
                                 String bb = "1";
@@ -333,6 +335,8 @@ public class EditWaterBillActivity extends BaseActivity {
                                     databaseAccess.updatemasterMOVACCOUNT(khetID, AREACODE, ACCOUNT,billno);
 
                                     databaseAccess.updateMASTER(PRESDATE, khetID, AREACODE, ACCOUNT,billno);
+
+
                                     databaseAccess.open();
                                     databaseAccess.updateMaster22(TOTALDUE1, ACCOUNT);
 

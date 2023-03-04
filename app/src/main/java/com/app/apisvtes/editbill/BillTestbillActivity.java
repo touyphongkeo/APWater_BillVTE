@@ -63,7 +63,7 @@ public class BillTestbillActivity extends AppCompatActivity {
     String HH_YEAR = "";
     String ratrid = "";
 
-    public DecimalFormat f1;
+    public DecimalFormat f1,f3;
     TextView txt_view0,txt_view1,txt_view2,txt_view3,txt_view4,txt_view5,txt_view6,txt_view7,txt_view8,txt_view9,txt_view10,text1,
             text_view19,text_view28,text_view14,text_view18,text_view27,text_view13,text_view17,text_view26,text,text3,office,text3s;
 
@@ -240,6 +240,7 @@ public class BillTestbillActivity extends AppCompatActivity {
                     List<HashMap<String, String>> productData;
                     productData = databaseAccess.getAllWaterView(CustID.toString());
                     f1 = new DecimalFormat("#,###");
+                    f3 = new DecimalFormat("####");
                     if (productData.size() > 0) {
                         txtCusName.setText(productData.get(0).get("NAME"));
                         txt_KhetID.setText(productData.get(0).get("RATRID"));
@@ -314,8 +315,14 @@ public class BillTestbillActivity extends AppCompatActivity {
                         Double dsese = Double.parseDouble(s1se);
                         textTotalBill.setText(f1.format(dsese));
 
+
+                        Double taloj = Double.parseDouble(f3.format(dsese));
+
+                        databaseAccess.open();
+                        databaseAccess.updatotal_Bill(taloj,CustID);
+
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
-                        String s1s = productData.get(0).get("Arrears2");
+                        String s1s = productData.get(0).get("TOTALDUE");
                         Double dses = Double.parseDouble(s1s);
                         textDue.setText(f1.format(dses));
 
@@ -325,10 +332,25 @@ public class BillTestbillActivity extends AppCompatActivity {
                      //   double dss = Double.parseDouble(antotall);
                         textTotal.setText(f1.format(antotall));
 
+
+                        Double dut = Double.parseDouble(f3.format(antotall));
+
+                        databaseAccess.open();
+                        databaseAccess.updatotalTOTALDUE(dut,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updatotalTOTALDUEMaster(dut,CustID);
+
+
                         // textTax.setText(productData.get(0).get("Tax"));
                         String s1sew = productData.get(0).get("Tax");
                         Double dsesew = Double.parseDouble(s1sew);
+                        Double Tax = Double.parseDouble(f3.format(dsesew));
+
                         textTax.setText(f1.format(dsesew));
+
+                        databaseAccess.open();
+                        databaseAccess.updataxt(Tax,CustID);
 
 
 
@@ -600,7 +622,7 @@ public class BillTestbillActivity extends AppCompatActivity {
                     List<HashMap<String, String>> Get_Date;
                     Get_Date = databaseAccess.getAllWaterViews(CustID.toString());
                     f1 = new DecimalFormat("#,###");
-
+                    f3 = new DecimalFormat("####");
                     if (Get_Date.size() > 0) {
 
                         String strZone=Get_Date.get(0).get("ZONE");
@@ -672,10 +694,13 @@ public class BillTestbillActivity extends AppCompatActivity {
                         Double dsese = Double.parseDouble(s1se);
                         textTotalBills.setText(f1.format(dsese));
 
+                        Double talosdb = Double.parseDouble(f3.format(dsese));
 
+                        databaseAccess.open();
+                        databaseAccess.updatotal_Bill(talosdb,CustID);
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
-                        String s1s = Get_Date.get(0).get("Arrears2");
+                        String s1s = Get_Date.get(0).get("TOTALDUE");
 
                         Double dses = Double.parseDouble(s1s);
                         textDues.setText(f1.format(dses));
@@ -685,6 +710,15 @@ public class BillTestbillActivity extends AppCompatActivity {
                         String s1 = Get_Date.get(0).get("TOTALDUE1");
                         Double dss = Double.parseDouble(s1);
                         textTotals.setText(f1.format(dss));
+
+
+                        Double dus = Double.parseDouble(f3.format(dss));
+
+                        databaseAccess.open();
+                        databaseAccess.updatotalTOTALDUE(dus,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updatotalTOTALDUEMaster(dus,CustID);
 
                         //  strBarcode=strM+strYear;
                         //  bar_number.setText(strBarcode);

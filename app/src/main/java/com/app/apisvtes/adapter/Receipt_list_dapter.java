@@ -108,7 +108,7 @@ public class Receipt_list_dapter extends RecyclerView.Adapter<Receipt_list_dapte
                          CustID=ACCOUNT;
                          Intent i = new Intent(context, BillTestbillActivity.class);
                          context.startActivity(i);
-                          //  Toast.makeText(context, "Ok", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(context, "Ok", Toast.LENGTH_SHORT).show();
                      }else {
 
 

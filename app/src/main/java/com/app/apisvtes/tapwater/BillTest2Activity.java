@@ -236,6 +236,7 @@ public class BillTest2Activity extends AppCompatActivity {
                     List<HashMap<String, String>> productData;
                     productData = databaseAccess.getAllWaterpritse(CustID.toString());
                     f1 = new DecimalFormat("#,###");
+
                     if (productData.size() > 0) {
                         String strAcc=productData.get(0).get("ACCOUNT");
                         String strZone=productData.get(0).get("ZONE");
@@ -315,6 +316,9 @@ public class BillTest2Activity extends AppCompatActivity {
                         String bvc = String.valueOf(vb);
                         String bvcf = String.valueOf(f12.format(vb2));
 
+                        Double ars = Double.valueOf(f12.format(vb));
+                        databaseAccess.open();
+                        databaseAccess.updateTOTALDUEBBBB(ars, CustID);
 
                         if (bbv>v1){
                             TOTALDUE.setText(f1.format(vb));
@@ -333,8 +337,6 @@ public class BillTest2Activity extends AppCompatActivity {
                         }
 
 
-                        databaseAccess.open();
-                        databaseAccess.updateTOTALDUEBB(bvc, CustID);
 
 
 

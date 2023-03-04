@@ -197,98 +197,102 @@ public class RepaymentActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 btnprice.setEnabled(false);
-                    try {
-                        String textpayment = text_payment.getText().toString();
-                        String bpaymets = String.valueOf(textpayment);
+                try {
+                    String textpayment = text_payment.getText().toString();
+                    String bpaymets = String.valueOf(textpayment);
 
-                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
-                        String date = sdf.format(new Date());
-                        DatabaseAccess databaseAccess = DatabaseAccess.getInstance(RepaymentActivity.this);
-                        databaseAccess.open();
-                        String b = bbbs.getText().toString();
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
+                    String date = sdf.format(new Date());
+                    DatabaseAccess databaseAccess = DatabaseAccess.getInstance(RepaymentActivity.this);
+                    databaseAccess.open();
+                    String b = bbbs.getText().toString();
 
-                        databaseAccess.open();
-                        databaseAccess.updatetbl_waterbv(textpayment, CustID);
-
-
-                        databaseAccess.open();
-                        databaseAccess.updateMaster223(textpayment, CustID);
-                        Confirm();
+                    databaseAccess.open();
+                    databaseAccess.updatetbl_waterbv(textpayment, CustID);
 
 
-                      //  databaseAccess.open();
-                     //   databaseAccess.updatePayment(b,CustID, billno);
+                    databaseAccess.open();
+                    databaseAccess.updateMaster223(textpayment, CustID);
+                    Confirm();
 
 
-                        if (b.equals("")) {
-                            changeOnConfirm();
+                    //  databaseAccess.open();
+                    //   databaseAccess.updatePayment(b,CustID, billno);
+
+
+                    if (b.equals("")) {
+                        changeOnConfirm();
+                    } else {
+                        if (textpayment.equals("0")) {
+                            databaseAccess.open();
+                            databaseAccess.updateMaster223(bpaymets, CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateTOTALDUEBB(bpaymets, CustID);
+
+                            double bbs = Double.parseDouble(vv);
+                            String PSTATUS = "1";
+                            double bb = Double.parseDouble(b);
+
+                            if (bb<=bbs){
+                                String vvvj= "0";
+                                double vbb = bbs-bb;
+                                double bhjf = Double.parseDouble(f1.format(vbb));
+                                String cb11 = String.valueOf(vbb);
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjf,b,vvvj,b, PSTATUS, billno, Usr_id1);
+
+
+
+                            }else {
+                                String vvvvk= "0";
+                                double vbb = bb-bbs;
+                                double bhjff = Double.parseDouble(f1.format(vbb));
+                                String cb11 = String.valueOf(vbb);
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vvvvk,b, PSTATUS, billno, Usr_id1);
+
+                            }
+
+
                         } else {
-                            if (textpayment.equals("0")) {
+
+                            databaseAccess.open();
+                            databaseAccess.updateMaster223(bpaymets, CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateTOTALDUEBB(bpaymets, CustID);
+
+                            double bbs = Double.parseDouble(vv);
+                            String PSTATUS = "1";
+                            double bb = Double.parseDouble(b);
+
+                            if (bb<=bbs){
+
+                                double vbb = bbs-bb;
+                                double bhj = Double.parseDouble(f1.format(vbb));
+                                String vvvv= "0";
+                                String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.updateMaster223(bpaymets, CustID);
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhj,b,vvvv,b, PSTATUS, billno, Usr_id1);
 
+
+                            }else {
+                                String Overpay="0";
+                                double vbb = bb-bbs;
+                                double bhjs = Double.parseDouble(f1.format(vbb));
+                                String vvvv= "0";
+                                String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.updateTOTALDUEBB(bpaymets, CustID);
-
-                                double bbs = Double.parseDouble(vv);
-                                String PSTATUS = "1";
-                                double bb = Double.parseDouble(b);
-
-                                if (bb<=bbs){
-                                    String vvvv= "0";
-                                    double vbb = bbs-bb;
-                                    String cb11 = String.valueOf(vbb);
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vvvv,b, PSTATUS, billno, Usr_id1);
-
-
-
-                                }else {
-                                    String vvvv= "0";
-                                    double vbb = bb-bbs;
-                                    String cb11 = String.valueOf(vbb);
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vvvv,b, PSTATUS, billno, Usr_id1);
-
-                                }
-
-
-                            } else {
-
-                                databaseAccess.open();
-                                databaseAccess.updateMaster223(bpaymets, CustID);
-
-                                databaseAccess.open();
-                                databaseAccess.updateTOTALDUEBB(bpaymets, CustID);
-
-                                double bbs = Double.parseDouble(vv);
-                                String PSTATUS = "1";
-                                double bb = Double.parseDouble(b);
-
-                                if (bb<=bbs){
-
-                                        double vbb = bbs-bb;
-                                        String vvvv= "0";
-                                        String cb11 = String.valueOf(vbb);
-                                        databaseAccess.open();
-                                        databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vvvv,b, PSTATUS, billno, Usr_id1);
-
-
-                                }else {
-                                    String Overpay="0";
-                                    double vbb = bb-bbs;
-                                    String vvvv= "0";
-                                    String cb11 = String.valueOf(vbb);
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vvvv,b, PSTATUS, billno, Usr_id1);
-
-                                }
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjs,b,vvvv,b, PSTATUS, billno, Usr_id1);
 
                             }
 
                         }
-                    } catch (Exception e) {
+
                     }
+                } catch (Exception e) {
+                }
 
             }
         });

@@ -176,101 +176,12 @@ public class Payment2Activity extends BaseActivity {
 
 
 
-//        btnprice.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                btnprice.setEnabled(false);
-//           //     Toast.makeText(Payment2Activity.this, PAY_NOS, Toast.LENGTH_SHORT).show();
-//                    try {
-//
-//                        if (Usr_id1.equals("")){
-//                            Intent intent = new Intent(Payment2Activity.this, LoginActivity.class);
-//                            startActivity(intent);
-//                        }else {
-//                        String textpayment = text_payment.getText().toString();
-//
-//                        String bpaymets = String.valueOf(textpayment);
-//
-//                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
-//                        String date = sdf.format(new Date());
-//                        DatabaseAccess databaseAccess = DatabaseAccess.getInstance(Payment2Activity.this);
-//                        databaseAccess.open();
-//                        String b = bbbs.getText().toString();
-//                        double nb = Double.parseDouble(b);
-//                        double nbs = Double.parseDouble(vv);
-//
-//                        if (nb<=nbs){
-//                            bbbs.setError("ຈຳນວນເງີນຊຳລະນ້ອຍກວາໜີຄ້າງຈ່າຍ");
-//                        }else {
-//                        databaseAccess.open();
-//                        databaseAccess.updatetbl_waterbv(textpayment, CustID);
-//
-//
-//                        if (b.equals("")) {
-//                            changeOnConfirm();
-//                        } else {
-//                                databaseAccess.open();
-//                                databaseAccess.updateMaster(textpayment, CustID);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.updateTOTALDUEBB(bpaymets, CustID);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.updateMPay(CustID);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.updateDBB(CustID);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.UpdatePaysdd(CustID);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.updateDBBD(CustID);
-//                                databaseAccess.open();
-//                                databaseAccess.updateDBBT(CustID, billno);
-//                                databaseAccess.open();
-//                                databaseAccess.updateDBBTAMOUNTS(date, Paid_date, CustID, billno);
-//
-//                                databaseAccess.open();
-//                                databaseAccess.updatBBCheckBill(CustID,billno);
-//                                String PSTATUS = "1";
-//
-//                                double bb = Double.parseDouble(b);
-//                              //  double pay = Double.parseDouble(bpaymets);
-//
-//                                //bb ຮັບຄາມາຈາກ ການຊຳລະ
-//                                //pay ຮັບຄາມາຈາກຍອດເຫືອທັງໜົດ
-//                                //vv ໜີຄ້າງຈ່າຍໃນເດືອນກອນ
-//                                //s1se ມຸນຄ້ານ້ຳໃນເດືອນ
-//
-//
-//                                double bbs = Double.parseDouble(vv);
-//
-//                                double vbb = bb-bbs;
-//
-//                                String cb11 = String.valueOf(vbb);
-//
-//                                databaseAccess.open();
-//
-//                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
-//
-//                                Confirm();
-//
-//                        }
-//                        }
-//                        }
-//                    } catch (Exception e) {
-//                    }
-//
-//            }
-//        });
-
-
         btnprice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 btnprice.setEnabled(false);
                 try {
+                    f1 = new DecimalFormat("####");
                     String textpayment = text_payment.getText().toString();
                     String bpaymets = String.valueOf(textpayment);
 
@@ -286,27 +197,24 @@ public class Payment2Activity extends BaseActivity {
 
                     databaseAccess.open();
                     databaseAccess.updateMaster223(textpayment, CustID);
-                 //   Confirm();
+                    //   Confirm();
 
 
 
 
-                 //  databaseAccess.open();
-                //    databaseAccess.updatePayment(b,CustID, billno);
+                    //  databaseAccess.open();
+                    //    databaseAccess.updatePayment(b,CustID, billno);
 
 
                     if (b.equals("")) {
                         changeOnConfirm();
                     } else {
                         if (textpayment.equals("0")) {
-
-
                             databaseAccess.open();
                             databaseAccess.updateMaster223(bpaymets, CustID);
 
                            /* databaseAccess.open();
                             databaseAccess.updateTOTALDUEBB(bpaymets, CustID);*/
-
 
                             databaseAccess.open();
                             databaseAccess.updateMPay(CustID);
@@ -333,24 +241,25 @@ public class Payment2Activity extends BaseActivity {
                             double bb = Double.parseDouble(b);
 
                             if (bb<=bbs){
-                                    String vvvv = "0";
-                                    double overpay = Double.parseDouble(TOTALDUES);
-                                    double vbb = bbs - bb;
-                                    String cb11 = String.valueOf(vbb);
-                                    String Overpay = "100";
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT2233(CustID, PAY_NOS, Paid_date, date, cb11, b, vv, b, PSTATUS, billno, Usr_id1);
+
+                                double vbb = bbs - bb;
+                                double bhjf = Double.parseDouble(f1.format(vbb));
+                                String cb11 = String.valueOf(vbb);
+
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT2233(CustID, PAY_NOS, Paid_date, date, bhjf, b, vv, b, PSTATUS, billno, Usr_id1);
 
                             }else {
-                                String vvvv= "0";
+
                                 double vbb = bb-bbs;
+                                double bhjff = Double.parseDouble(f1.format(vbb));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT2233(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT2233(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
 
                             }
                             Confirm();
-                         //   Toast.makeText(Payment2Activity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
+                            //   Toast.makeText(Payment2Activity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
 
                         } else {
 
@@ -377,7 +286,7 @@ public class Payment2Activity extends BaseActivity {
                             databaseAccess.open();
                             databaseAccess.updateDBBTAMOUNTS(date, Paid_date, CustID, billno);
 
-                           databaseAccess.open();
+                            databaseAccess.open();
                             databaseAccess.updatBBCheckBill(CustID,billno);
 
 
@@ -388,23 +297,23 @@ public class Payment2Activity extends BaseActivity {
 
                             if (bb<=bbs){
 
-                                    double vbb = bbs - bb;
-                                    String vvvv = "0";
-                                    String cb11 = String.valueOf(vbb);
-                                    databaseAccess.open();
-                                    databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11, b, vv, b, PSTATUS, billno, Usr_id1);
+                                double vbb = bbs - bb;
+                                double bhj = Double.parseDouble(f1.format(vbb));
+                               // String cb11 = String.valueOf(vbb);
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhj, b, vv, b, PSTATUS, billno, Usr_id1);
 
                             }else {
                                 double vbb = bb-bbs;
-                                String vvvv= "0";
+                                double bhjs = Double.parseDouble(f1.format(vbb));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, cb11,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjs,b,vv,b, PSTATUS, billno, Usr_id1);
 
                             }
 
                             Confirm();
-                         //   Toast.makeText(Payment2Activity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
+                            //   Toast.makeText(Payment2Activity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
                         }
 
                     }

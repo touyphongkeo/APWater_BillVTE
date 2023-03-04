@@ -1670,6 +1670,34 @@ public class DatabaseAccess {
     }
 
 
+    public boolean updateTOTALDUEBBBB(double TOTALDUE1, String  ACCOUNT) {
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BB SET TOTALDUE='"+ TOTALDUE1 +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+            // Log.e("ERROR", se.getMessage());
+        }
+        return true;
+    }
+
+
+    public boolean updateTOTALDUEBBB(double TOTALDUE1, String  ACCOUNT) {
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BB SET TOTALDUE='"+ TOTALDUE1 +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+            // Log.e("ERROR", se.getMessage());
+        }
+        return true;
+    }
+
+
     public boolean updatePaymentOverpay(String Overpay, String  ACCOUNT,String billno) {
         try {
             Connection con = DB_CON.CONN();
@@ -1684,10 +1712,10 @@ public class DatabaseAccess {
     }
 
 
-    public boolean updateArrearsMaster(String Arrears, String  ACCOUNT) {
+    public boolean updateArrearsMaster(double Arrears, String  ACCOUNT) {
         try {
             Connection con = DB_CON.CONN();
-            String query = "UPDATE PAYMENT SET Arrears=N'"+ Arrears +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+            String query = "UPDATE MASTER SET Arrears=N'"+ Arrears +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
             Statement stmt = con.createStatement();
             stmt.executeUpdate(query);
             con.close();
@@ -1701,6 +1729,21 @@ public class DatabaseAccess {
 
 
     public boolean updateMaster22(String TOTALDUE1, String  ACCOUNT) {
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE Master SET TOTALDUE='"+TOTALDUE1+"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+            // Log.e("ERROR", se.getMessage());
+        }
+        return true;
+    }
+
+
+
+    public boolean UpdateTOTALDUE1(double TOTALDUE1, String  ACCOUNT) {
         try {
             Connection con = DB_CON.CONN();
             String query = "UPDATE Master SET TOTALDUE='"+TOTALDUE1+"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
@@ -1747,6 +1790,21 @@ public class DatabaseAccess {
 
 
     public boolean updateMaster223(String TOTALDUE1, String  ACCOUNT) {
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE Master SET TOTALDUE='"+ TOTALDUE1 +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+
+            con.close();
+        }catch (SQLException se) {
+            // Log.e("ERROR", se.getMessage());
+        }
+        return true;
+    }
+
+    public boolean updateMaster223898(double TOTALDUE1, String  ACCOUNT) {
         try {
             Connection con = DB_CON.CONN();
             String query = "UPDATE Master SET TOTALDUE='"+TOTALDUE1+"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
@@ -2058,7 +2116,7 @@ public class DatabaseAccess {
 
 
 
-    public boolean addPAYMENT22(String  ACCOUNT, String PAY_NO, String Paid_date,String date,String TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+    public boolean addPAYMENT22(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
         //    /,TOTALBill_Amt,Arreas_Amt
         try {
             Connection con = DB_CON.CONN();
@@ -2072,7 +2130,7 @@ public class DatabaseAccess {
     }
 
 
-    public boolean addPAYMENT2233(String  ACCOUNT, String PAY_NO, String Paid_date,String date,String TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+    public boolean addPAYMENT2233(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
         //    /,TOTALBill_Amt,Arreas_Amt
         try {
             Connection con = DB_CON.CONN();
@@ -2170,6 +2228,102 @@ public class DatabaseAccess {
             return true;
         }
     }  //update category
+
+
+    public boolean updataxt(double tax,String ACCOUNT) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BB SET Tax='"+ tax +"' WHERE  ACCOUNT='" + ACCOUNT + "'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+    public boolean updatotal_Bill(double total_Bill,String ACCOUNT) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BB SET Total_Bill='"+ total_Bill +"' WHERE  ACCOUNT='" + ACCOUNT + "'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+    public boolean updatotalTOTALDUE(double TOTALDUE,String ACCOUNT) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BB SET TOTALDUE='"+ TOTALDUE +"' WHERE  ACCOUNT='" + ACCOUNT + "'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+
+
+
+    public boolean updatotalTOTALDUEMaster(double TOTALDUE,String ACCOUNT) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE MASTER SET TOTALDUE='"+ TOTALDUE +"' WHERE  ACCOUNT='" + ACCOUNT + "'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
 
 
 
