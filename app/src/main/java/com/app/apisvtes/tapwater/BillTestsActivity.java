@@ -342,9 +342,9 @@ public class BillTestsActivity extends AppCompatActivity {
 
                         double antotall = dsese+dses;
 
-                    /*    Double rs = Double.parseDouble(f3.format(dses));
+                        Double rs = Double.parseDouble(f3.format(dses));
                         databaseAccess.open();
-                        databaseAccess.updateArrearsMaster(rs, CustID);*/
+                        databaseAccess.updateArrearsMaster(rs, CustID);
 
 
                         textTotal.setText(f1.format(antotall));
@@ -737,9 +737,9 @@ public class BillTestsActivity extends AppCompatActivity {
 
                         double antotalls = dseses+dsess;
 
-                    /*    Double rs = Double.parseDouble(f3.format(dsess));
+                        Double rs = Double.parseDouble(f3.format(dsess));
                         databaseAccess.open();
-                        databaseAccess.updateArrearsMaster(rs, CustID);*/
+                        databaseAccess.updateArrearsMaster(rs, CustID);
 
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                         String s1 = Get_Date.get(0).get("TOTALDUE1");

@@ -1684,6 +1684,20 @@ public class DatabaseAccess {
     }
 
 
+    public boolean updateArre(double arrears, String  ACCOUNT) {
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE MASTER SET Arrears='"+ arrears +"' WHERE  ACCOUNT='"+ ACCOUNT +"'";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+            // Log.e("ERROR", se.getMessage());
+        }
+        return true;
+    }
+
+
     public boolean updateTOTALDUEBBB(double TOTALDUE1, String  ACCOUNT) {
         try {
             Connection con = DB_CON.CONN();
@@ -1724,6 +1738,10 @@ public class DatabaseAccess {
         }
         return true;
     }
+
+
+
+
 
 
 
@@ -2116,7 +2134,7 @@ public class DatabaseAccess {
 
 
 
-    public boolean addPAYMENT22(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+    public boolean addPAYMENT22(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,double Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
         //    /,TOTALBill_Amt,Arreas_Amt
         try {
             Connection con = DB_CON.CONN();
@@ -2130,7 +2148,65 @@ public class DatabaseAccess {
     }
 
 
-    public boolean addPAYMENT2233(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+    public boolean addPAYMENT22U(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,String Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+        //    /,TOTALBill_Amt,Arreas_Amt
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "Insert into PAYMENT(ACCOUNT,PAY_NO,Pay_Month,PAY_DATE,TOTALBill_Amt,Arreas_Amt,TOTAL_Amt,paymony,PSTATUS,Cmd,Bank,BILLNO,Location,Lst_updt,Lst_usr,pc_nm,UserID,UserNm)VALUES(N'"+ACCOUNT+"',N'"+ PAY_NO +"','"+Paid_date+"',N'"+date+"',N'"+TOTALBill_Amt+"',N'"+Arreas_Amt+"',N'"+aount+"',N'"+TOTALBill_Amt+"',N'"+PSTATUS+"',1,0,N'"+BILLNO+"',0,N'"+date+"',N'"+Lst_usr+"','android','"+Lst_usr+"','"+Lst_usr+"')";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+        }
+        return true;
+    }
+
+
+
+
+    public boolean addPAYMENT22P(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,double Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+        //    /,TOTALBill_Amt,Arreas_Amt
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "Insert into PAYMENT(ACCOUNT,PAY_NO,Pay_Month,PAY_DATE,TOTALBill_Amt,Arreas_Amt,TOTAL_Amt,paymony,PSTATUS,Cmd,Bank,BILLNO,Location,Lst_updt,Lst_usr,pc_nm,UserID,UserNm)VALUES(N'"+ACCOUNT+"',N'"+ PAY_NO +"','"+Paid_date+"',N'"+date+"',N'"+TOTALBill_Amt+"',N'"+Arreas_Amt+"',N'"+aount+"',N'"+TOTALBill_Amt+"',N'"+PSTATUS+"',1,0,N'"+BILLNO+"',0,N'"+date+"',N'"+Lst_usr+"','android','"+Lst_usr+"','"+Lst_usr+"')";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+        }
+        return true;
+    }
+
+
+    public boolean addPAYMENT22S(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,double Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+        //    /,TOTALBill_Amt,Arreas_Amt
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "Insert into PAYMENT(ACCOUNT,PAY_NO,Pay_Month,PAY_DATE,TOTALBill_Amt,Arreas_Amt,TOTAL_Amt,paymony,PSTATUS,Cmd,Bank,BILLNO,Location,Lst_updt,Lst_usr,pc_nm,UserID,UserNm)VALUES(N'"+ACCOUNT+"',N'"+ PAY_NO +"','"+Paid_date+"',N'"+date+"',N'"+TOTALBill_Amt+"',N'"+Arreas_Amt+"',N'"+aount+"',N'"+TOTALBill_Amt+"',N'"+PSTATUS+"',1,0,N'"+BILLNO+"',0,N'"+date+"',N'"+Lst_usr+"','android','"+Lst_usr+"','"+Lst_usr+"')";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+        }
+        return true;
+    }
+
+
+    public boolean addPAYMENT2233(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,double Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
+        //    /,TOTALBill_Amt,Arreas_Amt
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "Insert into PAYMENT(ACCOUNT,PAY_NO,Pay_Month,PAY_DATE,TOTALBill_Amt,Arreas_Amt,TOTAL_Amt,paymony,PSTATUS,Cmd,Bank,BILLNO,Location,Lst_updt,Lst_usr,pc_nm,UserID,UserNm)VALUES(N'"+ACCOUNT+"',N'"+ PAY_NO +"','"+Paid_date+"',N'"+date+"',N'"+TOTALBill_Amt+"',N'"+Arreas_Amt+"',N'"+aount+"',N'"+TOTALBill_Amt+"',N'"+PSTATUS+"',1,0,N'"+BILLNO+"',0,N'"+date+"',N'"+Lst_usr+"','android','"+Lst_usr+"','"+Lst_usr+"')";
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            con.close();
+        }catch (SQLException se) {
+        }
+        return true;
+    }
+
+
+    public boolean addPAYMENT2233S(String  ACCOUNT, String PAY_NO, String Paid_date,String date,double TOTALBill_Amt,String aount,double Arreas_Amt,String paymony, String PSTATUS, String BILLNO,String Lst_usr) {
         //    /,TOTALBill_Amt,Arreas_Amt
         try {
             Connection con = DB_CON.CONN();

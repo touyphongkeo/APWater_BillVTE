@@ -427,6 +427,165 @@ public class PaymentActivity extends BaseActivity {
 //            }
 //        });
 
+      /*  btnprice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnprice.setEnabled(false);
+
+
+                try {
+                    String textpayment = text_payment.getText().toString();
+                    String bpaymets = String.valueOf(textpayment);
+
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
+                    String date = sdf.format(new Date());
+                    DatabaseAccess databaseAccess = DatabaseAccess.getInstance(PaymentActivity.this);
+                    databaseAccess.open();
+                    String b = bbbs.getText().toString();
+
+                    databaseAccess.open();
+                    databaseAccess.updatetbl_waterbv(textpayment, CustID);
+
+
+                    databaseAccess.open();
+                    databaseAccess.updateMaster223(textpayment, CustID);
+                    //  Confirm();
+
+
+                    databaseAccess.open();
+                    databaseAccess.updatePayment(b,CustID, billno);
+
+
+                    if (b.equals("")) {
+                        changeOnConfirm();
+                    } else {
+                        if (textpayment.equals("0")) {
+                            databaseAccess.open();
+                            databaseAccess.updateMaster223(bpaymets, CustID);
+
+                           *//* databaseAccess.open();
+                            databaseAccess.updateTOTALDUEBB(bpaymets, CustID);*//*
+
+
+                            databaseAccess.open();
+                            databaseAccess.updateMPay(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateDBB(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.UpdatePaysdd(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateDBBD(CustID);
+                            databaseAccess.open();
+                            databaseAccess.updateDBBT(CustID, billno);
+                            databaseAccess.open();
+                            databaseAccess.updateDBBTAMOUNTS(date, Paid_date, CustID, billno);
+
+                            databaseAccess.open();
+                            databaseAccess.updatBBCheckBill(CustID,billno);
+                            String PSTATUS = "1";
+
+                            double bbs = Double.parseDouble(vv);
+
+                            double bb = Double.parseDouble(b);
+
+                            if (bb<=bbs){
+                                String vvvv= "0";
+                                double vbb = bbs-bb;
+                                double bhjf = Double.parseDouble(f1.format(vbb));
+                                String cb11 = String.valueOf(vbb);
+                                double kk = Double.parseDouble(f1.format(bbs));
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjf,b,kk,b, PSTATUS, billno, Usr_id1);
+
+                            }else {
+
+                                String vvvv= "0";
+                                double vbb = bb-bbs;
+                                double bhjff = Double.parseDouble(f1.format(vbb));
+                                String cb11 = String.valueOf(vbb);
+                                double kk = Double.parseDouble(f1.format(bbs));
+                                databaseAccess.open();
+
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,kk,b, PSTATUS, billno, Usr_id1);
+
+                                //  databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
+
+                            }
+
+                            //   Toast.makeText(PaymentActivity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
+                            Confirm();
+
+                        } else {
+
+                            databaseAccess.open();
+                            databaseAccess.updateMaster223(bpaymets, CustID);
+
+                          *//*  databaseAccess.open();
+                            databaseAccess.updateTOTALDUEBB(bpaymets, CustID);*//*
+
+
+                            databaseAccess.open();
+                            databaseAccess.updateMPay(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateDBB(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.UpdatePaysdd(CustID);
+
+                            databaseAccess.open();
+                            databaseAccess.updateDBBD(CustID);
+                            databaseAccess.open();
+                            databaseAccess.updateDBBT(CustID, billno);
+                            databaseAccess.open();
+                            databaseAccess.updateDBBTAMOUNTS(date, Paid_date, CustID, billno);
+
+                            databaseAccess.open();
+                            databaseAccess.updatBBCheckBill(CustID,billno);
+
+                            double bbs = Double.parseDouble(vv);
+                            String PSTATUS = "1";
+                            double bb = Double.parseDouble(b);
+
+                            if (bb<=bbs){
+                                double vbb = bbs - bb;
+                                double bhj = Double.parseDouble(f1.format(vbb));
+                                String vvvv = "0";
+                                String cb11 = String.valueOf(vbb);
+                                double kk1 = Double.parseDouble(f1.format(bbs));
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhj, b, kk1, b, PSTATUS, billno, Usr_id1);
+
+                            }else {
+                                double vbb = bb-bbs;
+                                double bhjs = Double.parseDouble(f1.format(vbb));
+                                String vvvv= "0";
+                                String cb11 = String.valueOf(vbb);
+                                double kk1 = Double.parseDouble(f1.format(bbs));
+                                databaseAccess.open();
+                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjs,b,kk1,b, PSTATUS, billno, Usr_id1);
+
+                            }
+
+                            Toast.makeText(PaymentActivity.this, ""+bpaymets, Toast.LENGTH_SHORT).show();
+
+                            Confirm();
+
+                        }
+
+                    }
+                } catch (Exception e) {
+                }
+
+            }
+        });*/
+
+
+
+
         btnprice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -495,19 +654,21 @@ public class PaymentActivity extends BaseActivity {
                                 String vvvv= "0";
                                 double vbb = bbs-bb;
                                 double bhjf = Double.parseDouble(f1.format(vbb));
+                                double bhvv = Double.parseDouble(f1.format(bbs));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjf,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22P(CustID, PAY_NOS, Paid_date, date, bhjf,b,bhvv,b, PSTATUS, billno, Usr_id1);
 
                             }else {
 
                                 String vvvv= "0";
                                 double vbb = bb-bbs;
                                 double bhjff = Double.parseDouble(f1.format(vbb));
+                                double bhjvv = Double.parseDouble(f1.format(bbs));
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
 
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22P(CustID, PAY_NOS, Paid_date, date, bhjff,b,bhjvv,b, PSTATUS, billno, Usr_id1);
 
                                 //  databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjff,b,vv,b, PSTATUS, billno, Usr_id1);
 
@@ -551,18 +712,20 @@ public class PaymentActivity extends BaseActivity {
                             if (bb<=bbs){
                                 double vbb = bbs - bb;
                                 double bhj = Double.parseDouble(f1.format(vbb));
+                                double bhjvv = Double.parseDouble(f1.format(bbs));
                                 String vvvv = "0";
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhj, b, vv, b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22P(CustID, PAY_NOS, Paid_date, date, bhj, b, bhjvv, b, PSTATUS, billno, Usr_id1);
 
                             }else {
                                 double vbb = bb-bbs;
                                 double bhjs = Double.parseDouble(f1.format(vbb));
+                                double bhjsv = Double.parseDouble(f1.format(bbs));
                                 String vvvv= "0";
                                 String cb11 = String.valueOf(vbb);
                                 databaseAccess.open();
-                                databaseAccess.addPAYMENT22(CustID, PAY_NOS, Paid_date, date, bhjs,b,vv,b, PSTATUS, billno, Usr_id1);
+                                databaseAccess.addPAYMENT22P(CustID, PAY_NOS, Paid_date, date, bhjs,b,bhjsv,b, PSTATUS, billno, Usr_id1);
 
                             }
 

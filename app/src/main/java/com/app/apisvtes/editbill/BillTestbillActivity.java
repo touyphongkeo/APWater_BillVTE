@@ -322,11 +322,16 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.updatotal_Bill(taloj,CustID);
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
-                        String s1s = productData.get(0).get("TOTALDUE");
+                        String s1s = productData.get(0).get("Arrears2");
                         Double dses = Double.parseDouble(s1s);
                         textDue.setText(f1.format(dses));
 
                         double antotall = dsese+dses;
+
+                        Double rs = Double.parseDouble(f3.format(dses));
+                        databaseAccess.open();
+                        databaseAccess.updateArrearsMaster(rs, CustID);
+
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                        // String s1 = productData.get(0).get("TOTALDUE1");
                      //   double dss = Double.parseDouble(antotall);
@@ -700,10 +705,14 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.updatotal_Bill(talosdb,CustID);
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
-                        String s1s = Get_Date.get(0).get("TOTALDUE");
+                        String s1s = Get_Date.get(0).get("Arrears2");
 
                         Double dses = Double.parseDouble(s1s);
                         textDues.setText(f1.format(dses));
+
+                        Double rs = Double.parseDouble(f3.format(dses));
+                        databaseAccess.open();
+                        databaseAccess.updateArrearsMaster(rs, CustID);
 
 
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));

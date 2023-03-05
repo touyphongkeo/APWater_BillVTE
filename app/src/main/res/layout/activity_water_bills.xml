@@ -91,7 +91,7 @@
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/notosanslaoui_regular"
                 android:gravity="center"
-                android:text="(ໃບບີນແຈ້ງຄ່ານ້ຳປະປາ/Water Bill)hh"
+                android:text="(ໃບບີນແຈ້ງຄ່ານ້ຳປະປາ/Water Bill)"
                 android:textColor="#090808"
                 android:textSize="22sp"
                 android:textStyle="bold" />

@@ -314,9 +314,9 @@ public class BillTestActivity extends AppCompatActivity {
                         textDue.setText(f1.format(rrears));
                         double ab = dsese+rrears;
 
-                    /*    Double rs = Double.parseDouble(f3.format(Arrears));
+                        Double rs = Double.parseDouble(f3.format(rrears));
                         databaseAccess.open();
-                        databaseAccess.updateArrearsMaster(rs, CustID);*/
+                        databaseAccess.updateArrearsMaster(rs, CustID);
 
                         //  String totals = productData.get(0).get("TOTALDUE1");
                        //  double sumv = Double.parseDouble(totals);
@@ -741,10 +741,10 @@ public class BillTestActivity extends AppCompatActivity {
 
                         double antotalls = dsese+dses;
 
-                  /*      Double rs = Double.parseDouble(f3.format(dses));
+                        Double rs = Double.parseDouble(f3.format(dses));
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
-*/
+
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                         /*String s1 = Get_Date.get(0).get("TOTALDUE1");
                         Double dsss = Double.parseDouble(s1);*/
