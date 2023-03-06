@@ -308,7 +308,6 @@ public class EditWaterBillActivity extends BaseActivity {
                             txtPreSread.requestFocus();
                         }else{
                             try {
-
                                 DatabaseAccess databaseAccess = DatabaseAccess.getInstance(EditWaterBillActivity.this);
                                 databaseAccess.open();
                                 String bb = "1";
@@ -319,7 +318,7 @@ public class EditWaterBillActivity extends BaseActivity {
                                 boolean isconnected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
 
                                 if(isconnected){
-                                    String version = "numpapavte27022023.apk";
+                                    String version = "numpapavte06032023.apk";
                                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
                                     String dateF = sdf.format(new Date());
 

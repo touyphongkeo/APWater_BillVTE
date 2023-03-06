@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -86,6 +87,7 @@ public class BillTestActivity extends AppCompatActivity {
     String slab1;
     double dses;
     LinearLayout layout1s;
+    ProgressBar progressBar2;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,7 +102,7 @@ public class BillTestActivity extends AppCompatActivity {
         button3= findViewById(R.id.button3);
         layout1s= findViewById(R.id.layout1);
 
-
+        progressBar2 = findViewById(R.id.progressBar_household2);
 
 
         //  getSupportActionBar().hide();
@@ -233,6 +235,8 @@ public class BillTestActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                progressBar2.setVisibility(View.VISIBLE);
                 //get all the dynamic views which will be changed programmatically
                 // TextView tv = (TextView) view.findViewById(R.id.textView3);
                 staff.setText(Usr_id1);
@@ -296,6 +300,10 @@ public class BillTestActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updataxt(Tax,CustID);
 
+                        String bill_on = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTTAX(Tax,CustID,bill_on);
+
 
                         //textTotalBill.setText(productData.get(0).get("Total_Bill"));
                         String s1se = productData.get(0).get("Total_Bill");
@@ -306,6 +314,11 @@ public class BillTestActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(talo,CustID);
+
+
+                        String bill_onu = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talo,CustID,bill_onu);
 
                        // String Arrears = productData.get(0).get("TOTALDUE");
                         String Arrears = productData.get(0).get("Arrears2");
@@ -318,6 +331,11 @@ public class BillTestActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
 
+
+                        String bill_on1 = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
+
                         //  String totals = productData.get(0).get("TOTALDUE1");
                        //  double sumv = Double.parseDouble(totals);
                         textTotal.setText(f1.format(ab));
@@ -326,6 +344,9 @@ public class BillTestActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUE(du,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTATotall(du,CustID,bill_on1);
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUEMaster(du,CustID);
@@ -720,6 +741,10 @@ public class BillTestActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updataxt(Tax,CustID);
 
+                        String bill_on = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTTAX(Tax,CustID,bill_on);
+
 
                         //textTotalBill.setText(productData.get(0).get("Total_Bill"));
                         String s1se = Get_Date.get(0).get("Total_Bill");
@@ -731,6 +756,10 @@ public class BillTestActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(talosd,CustID);
+
+                        String bill_onu = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talosd,CustID,bill_onu);
 
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
@@ -745,6 +774,12 @@ public class BillTestActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
 
+                        String bill_on1 = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
+
+
+
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                         /*String s1 = Get_Date.get(0).get("TOTALDUE1");
                         Double dsss = Double.parseDouble(s1);*/
@@ -753,9 +788,11 @@ public class BillTestActivity extends AppCompatActivity {
 
 
                         Double dus = Double.parseDouble(f3.format(antotalls));
-
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUE(dus,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTATotall(dus,CustID,bill_on1);
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUEMaster(dus,CustID);

@@ -48,6 +48,17 @@
                         app:cardElevation="0dp"
                         app:layout_collapseMode="pin">
 
+                        <ProgressBar
+                            android:id="@+id/progressBar_household2"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            android:backgroundTint="@color/white"
+                            android:indeterminateTint="#1a09d6"
+                            android:visibility="gone"
+                            android:layout_marginTop="-7dp"/>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

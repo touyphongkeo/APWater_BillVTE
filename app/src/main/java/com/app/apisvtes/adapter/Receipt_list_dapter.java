@@ -118,7 +118,7 @@ public class Receipt_list_dapter extends RecyclerView.Adapter<Receipt_list_dapte
                              CustID=ACCOUNT;
                              Intent i = new Intent(context, BillTestActivity.class);
                              context.startActivity(i);
-                            // Toast.makeText(context, "Ok 02", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(context, "Ok 02", Toast.LENGTH_SHORT).show();
                          }else if (RATRIDS.equals("02")){
                              holder.progressBar2.setVisibility(View.VISIBLE);
                              CustID=ACCOUNT;

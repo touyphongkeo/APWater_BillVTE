@@ -321,6 +321,10 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(taloj,CustID);
 
+                        String bill_onu = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(taloj,CustID,bill_onu);
+
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
                         String s1s = productData.get(0).get("Arrears2");
                         Double dses = Double.parseDouble(s1s);
@@ -332,6 +336,10 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
 
+                        String bill_on1 = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
+
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                        // String s1 = productData.get(0).get("TOTALDUE1");
                      //   double dss = Double.parseDouble(antotall);
@@ -342,6 +350,9 @@ public class BillTestbillActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUE(dut,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTATotall(dut,CustID,bill_on1);
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUEMaster(dut,CustID);
@@ -357,6 +368,9 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updataxt(Tax,CustID);
 
+                        String bill_on = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTTAX(Tax,CustID,bill_on);
 
 
                         //  txtMY4.setText( String.valueOf(  Integer.valueOf(strM4))  +"-" + strYear);
@@ -704,6 +718,10 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(talosdb,CustID);
 
+                        String bill_onu = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talosdb,CustID,bill_onu);
+
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
                         String s1s = Get_Date.get(0).get("Arrears2");
 
@@ -714,6 +732,9 @@ public class BillTestbillActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
 
+                        String bill_on1 = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
 
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                         String s1 = Get_Date.get(0).get("TOTALDUE1");
@@ -970,12 +991,6 @@ public class BillTestbillActivity extends AppCompatActivity {
                 doPhotoPrints();
             }
         });
-
-
-
-
-
-
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

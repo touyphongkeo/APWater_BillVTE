@@ -59,6 +59,7 @@ public class PrintTest2Activity extends AppCompatActivity {
     String HH_YEAR = "";
     String ratrid = "";
     public DecimalFormat f1;
+    public DecimalFormat f2;
     TextView txt_view0,txt_view1,txt_view2,txt_view3,txt_view4,txt_view5,txt_view6,txt_view7,txt_view8,txt_view9,txt_view10,text1,
              text_view19,text_view28,text_view14,text_view18,text_view27,text_view13,text_view17,text_view26,text,text3,office,text3s;
 
@@ -234,6 +235,7 @@ public class PrintTest2Activity extends AppCompatActivity {
                     List<HashMap<String, String>> productData;
                     productData = databaseAccess.getAllWaterpritse(CustID.toString());
                     f1 = new DecimalFormat("#,###");
+                    f2 = new DecimalFormat("####");
                     if (productData.size() > 0) {
                         String strAcc=productData.get(0).get("ACCOUNT");
                         String strZone=productData.get(0).get("ZONE");
@@ -254,6 +256,9 @@ public class PrintTest2Activity extends AppCompatActivity {
                         billno = productData.get(0).get("BILLNO").trim();
                         String s1g = productData.get(0).get("Total_Bill");
 
+                        Double talo = Double.parseDouble(f2.format(s1g));
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talo,CustID,billno);
 
                         txt_view7.setText(Usr_id1);
                         // txt_view9.setText(productData.get(0).get("TOTALDUE1"));

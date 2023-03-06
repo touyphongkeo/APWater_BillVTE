@@ -334,6 +334,10 @@ public class BillTestsActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(talo,CustID);
 
+                        String bill_onu = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talo,CustID,bill_onu);
+
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
                         String s1s = productData.get(0).get("Arrears2");
@@ -347,12 +351,20 @@ public class BillTestsActivity extends AppCompatActivity {
                         databaseAccess.updateArrearsMaster(rs, CustID);
 
 
+                        String bill_on1 = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
+
+
                         textTotal.setText(f1.format(antotall));
 
                         Double dugg = Double.parseDouble(f3.format(antotall));
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUE(dugg,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTATotall(dugg,CustID,bill_on1);
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUEMaster(dugg,CustID);
@@ -373,6 +385,10 @@ public class BillTestsActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updataxt(Tax,CustID);
+
+                        String bill_on = productData.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTTAX(Tax,CustID,bill_on);
 
 
 
@@ -715,6 +731,10 @@ public class BillTestsActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updataxt(Tax,CustID);
 
+                        String bill_on = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTTAX(Tax,CustID,bill_on);
+
 
                         //textTotalBill.setText(productData.get(0).get("Total_Bill"));
                         String s1se = Get_Date.get(0).get("Total_Bill");
@@ -727,6 +747,9 @@ public class BillTestsActivity extends AppCompatActivity {
                         databaseAccess.open();
                         databaseAccess.updatotal_Bill(talosdg,CustID);
 
+                        String bill_onu = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talosdg,CustID,bill_onu);
 
                         //textDue.setText(productData.get(0).get("TOTALDUE"));
                         String s1s = Get_Date.get(0).get("Arrears2");
@@ -735,11 +758,16 @@ public class BillTestsActivity extends AppCompatActivity {
 
 
 
+
                         double antotalls = dseses+dsess;
 
                         Double rs = Double.parseDouble(f3.format(dsess));
                         databaseAccess.open();
                         databaseAccess.updateArrearsMaster(rs, CustID);
+
+                        String bill_on1 = Get_Date.get(0).get("BILLNO");
+                        databaseAccess.open();
+                        databaseAccess.updaBTAraear(rs,CustID,bill_on1);
 
                         // textTotal.setText(productData.get(0).get("TOTALDUE1"));
                         String s1 = Get_Date.get(0).get("TOTALDUE1");
@@ -751,6 +779,9 @@ public class BillTestsActivity extends AppCompatActivity {
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUE(dusb,CustID);
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTATotall(dusb,CustID,bill_on1);
 
                         databaseAccess.open();
                         databaseAccess.updatotalTOTALDUEMaster(dusb,CustID);

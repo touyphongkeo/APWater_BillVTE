@@ -2329,6 +2329,102 @@ public class DatabaseAccess {
 
 
 
+
+    public boolean updaBTTAX(double tax,String ACCOUNT,String bill_on) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BT SET Tax='"+ tax +"' WHERE  ACCOUNT='" + ACCOUNT + "' AND BILLNO='"+ bill_on +"'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+    public boolean updaBTBILL_TOTALL(double Total_Bill,String ACCOUNT,String bill_on) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BT SET Total_Bill='"+ Total_Bill +"' WHERE  ACCOUNT='" + ACCOUNT + "' AND BILLNO='"+ bill_on +"'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+    public boolean updaBTAraear(double Arrears,String ACCOUNT,String bill_on) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BT SET Arrears='"+ Arrears +"',Payarreas='"+ Arrears +"' WHERE  ACCOUNT='" + ACCOUNT + "' AND BILLNO='"+ bill_on +"'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+    public boolean updaBTATotall(double TOTALDUE,String ACCOUNT,String bill_on) {
+        fCheck=0;
+        try {
+            Connection con = DB_CON.CONN();
+            String query = "UPDATE BT SET TOTALDUE='"+ TOTALDUE +"',Total='"+ TOTALDUE +"' WHERE  ACCOUNT='" + ACCOUNT + "' AND BILLNO='"+ bill_on +"'";
+            fstr=query;
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate(query);
+            fCheck=1;
+            con.close();
+        } catch (SQLException se) {
+            Log.e("ERROR", se.getMessage());
+        }
+
+        if (fCheck == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+
+
+
+
     public boolean updatotal_Bill(double total_Bill,String ACCOUNT) {
         fCheck=0;
         try {

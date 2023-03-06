@@ -316,7 +316,7 @@ public class EditWaterbbBillActivity extends BaseActivity {
                                 NetworkInfo nInfo = cm.getActiveNetworkInfo();
                                 boolean isconnected = nInfo != null && nInfo.isAvailable() && nInfo.isConnected();
                                 if(isconnected){
-                                    String version = "numpapavte27022023.apk";
+                                    String version = "numpapavte06032023.apk";
 
                                     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
                                     String dateF = sdf.format(new Date());

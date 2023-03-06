@@ -290,6 +290,10 @@ public class BillTest2Activity extends AppCompatActivity {
 
                         billno = productData.get(0).get("BILLNO").trim();
                         String s1g = productData.get(0).get("Total_Bill");
+
+
+
+
                       //  String tota = productData.get(0).get("TOTALDUE");
                         String tota = productData.get(0).get("Arrears2");
 
@@ -299,6 +303,11 @@ public class BillTest2Activity extends AppCompatActivity {
                         bbv = dssf+dsss;
                         txt_view8.setText(f1.format(bbv));
 //
+
+                        Double talo = Double.parseDouble(f2.format(dssf));
+
+                        databaseAccess.open();
+                        databaseAccess.updaBTBILL_TOTALL(talo,CustID,billno);
 
 
 
